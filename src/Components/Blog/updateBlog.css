@@ -1,0 +1,240 @@
+
+:root{
+  --width:95vw;
+}
+.form001a{
+    max-width: 90%;
+    margin:4rem auto;
+    background-color: #e7e7e1;
+    height: 90vh;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+   }
+   
+   .box {
+       width: 380px;
+       max-width: 98%;
+       float: right;
+       height: 300px; 
+       background: #e5fbff;
+       border: 8px solid white;
+       box-shadow: 7px 1px 20px 0px #0000006e;
+   
+     }
+   .box img{
+    width: 350px;
+    height: 300px;
+    object-fit: contain;
+   }
+     .cropbox {
+       width: auto;
+       margin: 20px 20px;
+     }
+     .cropbox-content{
+      width: 400px;
+      max-width: 95%;
+      height: 320px;
+      background: #e5fbff;
+      border: 8px solid white;
+      box-shadow: 7px 1px 20px 0px #0000006e;
+
+     }
+
+     @media (max-width:428px){
+      .cropbox-content{
+        width: var(--width);
+        height: calc(var(--width) - 30px);
+        background-color: inherit;
+      }
+      .box{
+        width: var(--width);
+        height: calc(var(--width) - 50px);
+        background-color: inherit;
+      }
+      
+     }
+   
+     .div0001{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 100%;
+     }
+   
+     .button001{
+       width:10;
+       margin-top: 5px;
+       height:20px ;
+       font-size: 15px;
+       background-color:  #ff6b06;
+       color: white;
+       border: none;
+       border-radius: 10px;
+       float: right;
+       
+     }
+     .button001{
+      margin-top:20px;
+      border-radius: 20px;
+      background-color: #f5753a;
+      border: none;
+      color: rgb(255, 255, 255);  
+     width: 100px;
+     height: 35px;
+      font-size: 16px;
+      font-family: 'DM Sans',sans-serif;
+    }
+   
+     .div002{
+      display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+     }
+     .div003 {
+      width: auto;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: row;
+      border-radius: 50px;
+      max-height: auto;
+      margin:20px auto;
+    }
+     .div003c {
+       width: auto;
+       justify-content: space-around;
+       display: flex;
+       flex-direction: column;
+       border-radius: 0px;
+       max-height: auto;
+       margin:20px auto;
+     }
+   .div003c input{
+    width: 200px;
+    border-radius: 0;
+    background-color: black;
+   }
+   .div003c input #file-upload-button{
+    background: green;
+   }
+   .div003c .button001{
+    margin: 20px auto auto auto;
+   }
+     .div0031{
+       margin: auto 10px;
+       width: 100px;
+       height: 100%;
+       padding: .3em;
+       border: none;
+       border-radius: 20px;
+       left: border;
+       background-color:rgb(255, 255, 255);
+       border: 1px solid #ff6b06;
+     }
+    .div0032{
+     width: 100px;
+     height: 100%;
+     border: none;
+     border-radius: 20px;
+     margin: auto 10px;
+     padding: .3em;
+      border: 1px solid #ff6b06;
+      background-color: #ff6b06;
+    }
+   
+   
+    .priority1{
+     height: 32%;
+     width: 99%;
+     margin: auto;
+     background-color: rgba(241, 135, 14,0.5);
+     display: flex;
+    }
+     
+   
+    .priority2{
+     height: 32%;
+     width: 99%;
+     margin: auto;
+     display: flex;
+     background-color: rgba(241, 135, 14,0.3);
+    }
+     
+   
+    .priority3{
+     height: 32%;
+     width: 99%;
+     margin: auto;
+     display: flex;
+     background-color: rgba(241, 135, 14,0.1);
+    }
+     
+   
+    .div0004xy{
+     width: 100%;
+     display: flex;
+    }
+   
+    .div0004xy label{
+     width: 30%;
+     display: flex;
+     align-items: center;
+     flex-direction: row-reverse;
+    }
+   
+    .div0004xy input{
+     width: 60%;
+     border-radius: 10px;
+     height: 3rem;
+     font-size: 15px;
+     border: none;
+     margin-left: 2rem;
+    }
+   
+    .div0004xy button{
+     width:25%;
+     height: 3rem ;
+     font-size: 15px;
+     background-color:  #ff6b06;
+     color: white;
+     border: none;
+     border-radius: 10px;
+     margin-left: 2rem;
+    }
+   
+    
+   
+   
+   
+    .div0005a{
+     width: 40%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+    }
+   
+    .div0005b{
+     width: 60%;
+     margin-left: 4%;
+     height: 100%;
+     display: flex;
+    }
+   
+    .div0005b label{
+     width:10%;
+     display: flex;
+     align-items: center;
+    }
+    
+    .div0005b textarea{
+     width: 83%;
+     height: 90%;
+     margin: auto;
+     border-radius: 10px;
+     border: none
+    }

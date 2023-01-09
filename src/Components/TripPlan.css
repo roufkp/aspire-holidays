@@ -1,0 +1,26 @@
+
+
+.slider {
+    color: #e75613;
+  }
+
+.slider .MuiSlider-thumb{
+    background-color:#ccd1a7;
+    height: 15px;
+    width: 15px;
+}
+
+.slider .MuiSlider-track{
+    background-color: #e52929;
+    height: 7px;
+    border: none;
+  }
+
+.slider .MuiSlider-rail{
+    opacity: 1;
+    height: 6px;
+    width: 250px;
+    background-color:#d6f6ef;
+}
+  
+ 

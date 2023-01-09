@@ -1,0 +1,107 @@
+
+
+.div0000{
+    padding: 20px 0 10px 0;
+    background: #ff6b06;
+    background: #f5f5f5;
+    background: rgb(19, 18, 18);
+    /* background-image: url('../Assets/dezert1.jpg'); */
+    background-attachment: fixed;
+    background-position: center;
+    background-size:contain ;
+}
+
+.div00{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto 50px AUTO;
+    flex-wrap: wrap;
+    max-width: 1150px;
+}
+
+.div001{
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+    background-color: aliceblue;
+    background-color: transparent;
+    /* padding: 20px 0;
+    background-color: rgb(43, 42, 42); */
+   
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px;
+    justify-content: space-around;
+    
+    align-items: center;
+    flex-direction: column;
+}
+
+.div002{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(147, 144, 144, 0.459); 
+}
+
+
+.div003{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    margin:auto auto auto auto ;
+}
+.img000{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.div004{
+    width: 98%;
+    text-align: left;
+    color: rgb(3, 3, 3);
+    color: #080808;
+    margin:auto;
+    font-size: 0.9rem;
+}
+.div004 p{
+    padding-left: 10px;
+}
+
+.div005{
+    margin: auto auto 20px auto;
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+}
+.div005 h3,h5{
+    margin: 0;
+    padding-left: 10px;
+    
+    color:#8c8c8c;
+}
+.head{
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 10px 20px;
+    border-radius: 0 25px 25px 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    color:whitesmoke;
+    background-color: #ff6b06;
+    box-shadow: 0px 5px 20px rgb(44 43 43,.5);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 800;
+}
+.div006{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    /* background-color: rgb(0 0 0 / 40%); */
+    border-radius: 10px;
+    /* box-shadow: 0px 5px 20px rgba(147, 144, 144, 0.459);  */
+    padding: 0 0;
+}

@@ -1,0 +1,105 @@
+
+
+  .div002{
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    min-height: 50px;
+    align-items: center;
+  }
+
+
+.nav{
+width: auto;
+font-size: 16px;
+position: absolute;
+right: 20px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0 20px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menuicon{
+  display: none;
+}
+@media screen and (max-width:780px){
+  .nav ul {
+    display: none;
+  }
+  .menuicon{
+    display: block;
+  }
+}
+.nav li {
+  margin: 0;
+  margin-left: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;  
+  font-family: 'DM Sans',sans-serif;
+}
+
+.nav a:hover,
+.nav a:active {
+  color: #f3cafb;
+}
+
+.nav .button1 {
+  font: inherit;
+  background :#dd370d;;
+  border: 1px solid #dd370d;
+  padding: 0.4rem 0.7rem;
+  margin: 2px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+  border-radius: 8px;
+}
+
+
+.nav .button2 {
+  font: inherit;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 0.4rem 0.8rem;
+  color: white;
+  margin: 2px;  
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+  border-radius: 8px;
+}
+
+.nav button:focus {
+  outline: none;
+}
+
+.nav button:hover,
+.nav button:active {
+  color: #f3cafb;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
+}
+
+.img001 {
+  width: 150px;
+  margin-top:auto;
+  position: absolute;
+  left: 20px;
+}
+.img005{
+  width: 40px;
+  height: auto;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+}

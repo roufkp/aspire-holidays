@@ -1,0 +1,145 @@
+:root {
+    --primary: rgb(12, 8, 43);
+    --secondary: #f87700;
+  }
+h1{
+font-weight: 600;
+font-size: 1.8rem;
+font-family: 'Dm sans', sans-serif;
+text-align: center;
+}
+
+.div001{
+    width: 90%;
+    text-align: left;
+    margin: 100px auto 100px auto;
+    line-height: 25px;   
+    max-width: 1150px;
+}
+
+.div002{
+    display: flex;
+    width: 100%;
+    margin: 50px auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-content: stretch; */
+    /* align-items: baseline; */
+    justify-content: space-around;
+    border: 0px solid var(--secondary);
+    max-width: 800px;
+    background-color: aliceblue;
+    
+}
+.div0021{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.div002 img{
+    
+    width: 450px;
+    max-width: 100%;
+    border: 8px solid white;    
+    box-shadow:3px 4px 20px 0px rgb(14 13 13 / 10%);
+}
+@media (max-width:510px) {
+    .div002 img{
+    
+        width: 450px;
+        max-width: 100%;
+        border: none;    
+        box-shadow: none ;
+    }
+    
+}
+
+.div003{
+    width: 95%;
+    max-width: 700px;
+    /* max-width: 400px; */
+    text-align: left;
+    margin: auto;
+    font-family: 'DM Sans', sans-serif;
+}
+.div003 ul{
+    margin:auto;
+}
+.div003 li{
+    line-height: 45px;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.div004{
+    display: flex;
+    width: 90%;
+    max-width: 1150px;
+    text-align: left;
+    margin: 50px auto 100px auto;
+    line-height: 25px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div005{
+    width: auto;
+    margin: 50px auto 0 auto;
+}
+
+.div002a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 4% 7% 4% 7%;
+    justify-content: space-around;
+}
+
+
+.div006{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div006 img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.div007a{
+    margin:100px auto;
+    font-family: 'DM Sans', sans-serif;
+    max-width: 1150px;
+    display: none;
+    
+}
+.div007{
+    margin:100px auto 0 auto;
+    height: 400px;
+    font-family: 'DM Sans', sans-serif;
+    width: auto;
+    max-width: 95%;
+    display: none;
+    background-image: url('../..');
+    
+}
+
+
+.p001{
+    font-weight: 550;
+    margin-bottom: 0;
+}
+
+.p002{
+    font-weight: 350;
+    margin-top: 5px;
+}

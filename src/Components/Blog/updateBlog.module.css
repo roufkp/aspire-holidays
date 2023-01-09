@@ -1,0 +1,196 @@
+.div000{
+    min-height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-image: url('../../Assets/treeforest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "DM Sans", sans-serif;
+}
+
+.div001{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  padding: 20px 0 0 0;
+  justify-content: space-between;
+  
+}
+
+.img001{
+    width: 200px;}
+
+
+.button001{
+    margin-top:20px;
+    border-radius: 20px;
+    background-color: #f5753a;
+    border: none;
+    color: rgb(255, 255, 255);  
+   width: 100px;
+   height: 35px;
+    font-size: 16px;
+    font-family: 'DM Sans',sans-serif;
+  }
+
+
+.button002{
+  margin-top:20px;
+  border-radius: 20px;
+  background-color:white;
+  border: 1px solid #f5753a;
+  color: #f5753a;  
+  font-size: 16px;
+  width: 100px;
+  height: 35px;
+  font-family: 'DM Sans',sans-serif;
+}
+  
+  
+
+
+  .div002{
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    background-color: rgb(3 0 0 / 73%);
+    margin: 10px auto 20px auto;
+    border-radius: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .div003{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+ }
+
+ .div004{
+  width: auto;
+  height: fit-content;
+  padding: 10px;
+  margin: auto;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+ }
+ .img002{
+    border-radius: 50%;
+    width: 100px;
+  }
+
+  .img002a{
+    width : 24vw;
+    height: 45vh;
+  }
+
+
+ .div005, .div005b {
+    width : auto;
+    height: auto;
+    background-color: transparent;
+    margin: 20px auto;
+    border-radius: 20px;
+ }
+
+ .div005 input{
+  width: 80%;
+  color: rgb(182, 192, 233);
+  font-family: "DM Sans", sans-serif;
+  padding: 10px 0;
+  border: 1px solid rgb(182, 192, 233);
+  font-size: 1rem;
+  text-align: center;
+  margin: auto auto 20px auto;
+
+ }
+
+ .div005 input:focus,textarea:focus{
+  outline: none;
+  text-decoration: underline;
+ }
+
+ .div005 textarea{
+  font-family: "DM Sans", sans-serif;
+  padding: 5px 10px;
+  width: 90%;
+  color: rgb(182, 192, 233);
+  height: 250px;
+  background: transparent;
+  line-height: 20px;
+  font-size: 16px;
+  border: 1px solid rgb(182, 192, 233);
+  text-align: left;
+  border-radius: 0px;
+
+ }
+
+ .div005b textarea{
+  font-family: "DM Sans", sans-serif;
+  padding: 5px 10px;
+  width: 90%;
+  max-width: 350px;
+  color: rgb(182, 192, 233);
+  height: 250px;
+  background: transparent;
+  line-height: 20px;
+  font-size: 16px;
+  border: 1px solid rgb(182, 192, 233);
+  text-align: left;
+  border-radius: 0px;
+
+ }
+ 
+
+ .div007{
+  display: flex;
+ }
+
+ .div008{
+  display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    max-width: 180px;
+    width: 90%;
+    justify-content: space-between;
+    padding: 0 0 0 20px;
+    margin:20px auto 20px auto;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+ }
+
+ .div009{
+  cursor: pointer; 
+  background-color: #f5753a;
+  padding: 8px 30px;
+  border-radius:20px;
+ }
+
+ .div009:hover{
+  color: rgb(120, 120, 121);
+ }
+
+.btns{
+  font-family: "DM Sans", sans-serif;
+  margin: auto auto auto auto;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  max-width: 300px;
+}
+
+ 

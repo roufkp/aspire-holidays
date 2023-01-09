@@ -1,0 +1,25 @@
+.div000 {
+    width: 100%;
+   padding: 20px 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Dm', sans-serif;
+    
+  }
+
+  .button{
+    padding: 10px 20px;
+    font-size: 16px;
+    /* font-size: 22px; */
+    background-color: #ff6b06;
+    /* opacity: 0.8; */
+    color: white;
+    border: none;
+    font-family: 'DM Sans',sans-serif;
+    border-radius: 20px;
+  }

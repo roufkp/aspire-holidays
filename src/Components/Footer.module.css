@@ -1,0 +1,120 @@
+.div000{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(19, 18, 18);
+    color: rgb(226, 225, 225);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.div001{
+   
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div002{
+    flex-grow: 6;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto 50px auto;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.div003{
+    flex-grow: 4;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    max-width: 500px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.div004{
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: auto auto 20px auto;
+}
+
+.div005{
+    width: auto;
+    text-align: left;
+    margin:20px;
+}
+.div005 a{
+    text-decoration: none;
+    color: inherit;
+}
+.img001{
+ width: 150px;
+ height: auto;
+}
+
+.div006{
+    width: 90%;
+    margin: 10px auto;
+    padding: 0;
+    font-size: 0.75rem;
+    font-style:normal;
+    color: rgb(226, 225, 225);
+}
+.div006 a{
+    text-decoration:none;
+    color: inherit;
+}
+.div007{
+    font-size: 0.75rem;
+    margin: 50px auto 0 auto;
+}
+
+.div004 input{
+    width: auto;
+    /* max-width: 70%; */
+    margin: 10px auto 20px auto;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    color: rgb(112, 110, 110);
+    background-color: transparent;
+    border: 1px solid rgba(201, 205, 207, 0.753);
+}
+
+.div004 button{
+    padding: 10px 25px;
+    font-size: larger;
+    color: rgb(226, 225, 225);
+    border: none;
+    background-color: #f77117;
+    border-radius: 10px;
+    font-size: 16px;    
+    font-family: 'DM Sans',sans-serif;
+}
+
+.div008{
+    width: 95%;
+    padding: 30px 0;
+    margin: auto;
+    border-bottom: 1px solid rgb(226, 225, 225);
+}
+
+.div009{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    max-width: 150px;
+}
+
+.img002{
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px;
+    background-color: aliceblue;
+   }

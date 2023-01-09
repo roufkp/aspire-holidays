@@ -1,0 +1,254 @@
+.div000{
+  background-color: rgb(255, 255, 255);
+}
+.div001 {
+  width: 100%;
+  /* min-height: 90vh; */
+  background-image: url('../Assets/bg1.jpg');
+  /* background-image: url('../Assets/Flight.jpg');
+  background-image: url('../Assets/travelling-bg.png'); */
+  background-repeat: no-repeat;
+  display: flex;
+  overflow: hidden;
+  /* background-size: 40%;
+  background-position: 100% 100%; */
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  }
+  @media  (max-width:700px) {
+
+    .div003{
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 5rem;
+   
+    color: #e55829;
+    text-align: left;
+    
+    letter-spacing: .2rem;
+    font-weight: 900;
+  }
+  }
+
+  .div002{
+    color: white;
+    padding: 5% 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+.div0011{
+  width: 100%;
+  max-width: 1150px;
+  margin:auto  auto auto auto;
+  background-color: rgb(19, 18, 18);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 40px 0 20px 0;
+  color: #e56829;
+  align-items: center;
+}
+.div0011a{
+  background: #000;
+}
+.div0011b button{
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #ff6b06;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 4px 9px 0px #0d171a12;
+}
+
+  .div002a{
+    color: white;
+    margin:10% auto 70px auto; 
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .div003a{
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2rem;
+   
+    color: #e56829;
+    text-align: left;
+    
+    letter-spacing: .2rem;
+    font-weight: 900;
+  }
+
+  .div003{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'BebasNeueRegular', sans-serif;
+   
+    font-size: 5rem;
+   
+    color: #e55829;
+    text-align: left;
+    
+    letter-spacing: .2rem;
+    font-weight: 900;
+  }
+@media screen and (max-width:600px){
+  .div003{
+    font-size: 3.5rem;
+    overflow-x: hidden;
+  }
+
+  
+}
+  .div003p{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    width: auto;
+    margin-top: 15px;
+    text-align: left;
+    font-family: 'DM Sans',sans-serif;
+  }
+  
+  .div003pc{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-top: 30px;
+   color: #ff6b06;
+
+  }
+  .div003pc button{
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #ff6b06;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 4px 9px 0px #0d171a12;
+  }
+
+
+  
+  .div004{
+    width: 450px;
+    max-width: 90%;
+    margin-left:8%;
+  }
+
+  .img001 {
+    width: 12%;
+    height: 170%;
+    margin-top: -2%;
+  }
+.carousalHeading{
+  padding-top: 100px;
+  margin: 0 auto;
+  font-family: 'DM Sans', sans-serif;
+  background: transparent;
+  }
+.caro{
+  background: transparent;
+  height: 400px;
+  max-width: 1200px;
+  margin: 0 auto 70px auto;
+  color: rgb(203, 212, 222);
+  font-family: 'DM Sans', sans-serif;
+}
+.caroItem{
+  width: 250px;
+  height: 280px;
+  border-radius:20px;
+  margin: auto ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:  0;
+  background: rgb(255, 255, 255);
+  box-shadow: 5px 5px 9px 2px rgba(14, 13, 13, 0.308) ;
+}
+.caroItem .caroImage{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  border-radius: 20px;
+  background: transparent;
+}
+.caroImage img{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  margin: auto;
+}
+.caroText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  position: relative;
+  border-radius:  10px 10px 0 0;
+  width: 100px;
+  top: -20px;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+
+}
+.div0011a{
+  background: transparent;
+  color: #ff8800;
+  color: #8c8c8c;
+  display: flex;
+  opacity: 0.2;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  width: 98%;
+  margin: auto;
+  max-width: 300px;
+  background-image: url('../Assets/travelling-items.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  height: 300px;
+}
+@media screen and (max-width:600px){
+  .div0011a{
+   display: none;
+  }
+  
+  
+}
+.div0011b{
+  background: transparent;
+  color: #ff8800;
+  color: #8c8c8c;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  max-width: 400px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  height: 380px;
+}

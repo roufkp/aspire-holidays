@@ -1,0 +1,141 @@
+.div001{
+    width: 100%;
+    display: flex;
+    padding:100px 0;
+    align-items: center;
+    max-width: 1140px;
+    background-color: transparent;
+    margin: auto;
+    font-family: 'DM Sans', sans-serif;
+}
+.img001{
+    width: 450px;
+    border:10px solid white;
+    max-width: 90%;
+    box-shadow: 3px 4px 20px 0px rgb(14 13 13 / 10%) ;
+}
+@media (max-width:510px) {
+ .img001{
+  
+      width: 450px;
+      max-width: 100%;
+      border: none;    
+      box-shadow: none ;
+  }
+  
+}
+
+
+::-webkit-scrollbar{
+	display:auto;
+}
+.div002{
+  width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+
+.div003{
+  margin: auto 20px;
+  text-align: left;
+  line-height: 30px;
+  width: 450px;
+  max-width: 90%;
+}
+.div003 h1{
+    font-size: 2rem;
+}
+
+.div003 h2{
+    color: rgb(14, 20, 56);
+}
+
+.div003 p{
+   line-height: 22px;
+}
+
+  .div003 button{
+    width:40%;
+    height: 15% ;
+    font-size: 22px;
+    background-color:  #ff6b06;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  .react-multi-carousel-list img{
+    width:250px;
+  }
+  .div06{
+    background-color: transparent;
+    width: 95%;
+    margin:0 auto 100px auto;    
+  }
+  .div061{
+    display: flex;
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+  }
+  .div006{
+    width: 250px;
+    height: 280px;
+    margin:  40px 40px ;
+    padding: 10px 0;
+    background: rgb(255, 255, 255);
+    box-shadow: 3px 4px 9px 5px rgb(14 13 13 / 10%) ;
+
+}
+
+.img002{
+  height: 100%;
+  width: 92%;
+  margin: auto;
+  background: transparent;
+  object-fit: cover;
+}
+.div005{
+  width: 100%;
+  align-items: center;
+  background: white;
+  z-index: auto;
+  margin-top:-70px;
+  position: relative;
+}
+.div004{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5px;
+    font-family: 'DM Sans',sans-serif;
+    font-size: 13px;
+    background-color: white;
+}
+.button001{
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-weight: 400;
+  background-color: #f87c29;
+  color: white;
+  border: none;
+  border-radius: 19px;
+  margin-bottom: 10px;
+}
+.div004 .div004k{
+  display: none;
+
+}
+.react-card-back,.react-card-front{
+  transform-style: flat;
+  background-color: #f87c29;
+}

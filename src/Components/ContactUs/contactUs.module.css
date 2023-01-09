@@ -1,0 +1,108 @@
+.div001{
+background-image: url('../../Assets/picture_014.jpg');
+width: 100%;
+margin: auto;
+min-height: 60vh;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+/* padding-top: 3%; */
+/* padding-left: 9%; */
+color: white;
+text-align: left;
+font-family: 'DM Sans', sans-serif;
+}
+
+.div0012{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 30px 0;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+}
+.p001{
+ font-size: 16px; 
+}
+
+.div002{
+    display: flex;
+    /* width: 40%; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin: 50px auto;
+}
+
+.div003{
+           /* width: 49%; */
+    display: flex;
+    /* height: 3rem; */
+    /* margin-top: 3px; */
+    margin: 10px 20px;
+    background: transparent;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    width: auto;
+    max-width: 90%;
+    border-radius:30px ;
+}
+
+.img002{
+    width: 40px;
+    /* height: 80%; */
+    border-radius: 50%;
+    /* border: 4px; */
+    background: white;
+    font-size: 16px;
+    margin: auto 10px;
+   }
+
+
+   .p002{
+           /* margin-left: 8%; */
+    font-size: 16px;
+    /* width: 300px; */
+    margin: 12px 15px 12px 0;
+    }
+
+   h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+   }
+
+   .div004{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 3%; */
+    /* width: 50%; */
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+   }
+
+   .div004 button{
+    width:auto;
+    height: auto ;
+    font-size: 16px;
+    background-color:  #ff6b06;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    
+   }
+   .myform{
+    width: 90%;
+    max-width: 600px;
+   }
