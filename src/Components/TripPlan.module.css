@@ -3,7 +3,7 @@
 .form{
     background-color: transparent;
     color: #ff6b06;
-    border: 2px solid;
+    /* border: 2px solid; */
     /* padding: 2.3% 3.0% 0.7% 3.0%; */
     /* width: 28%; */
     width: 250px;
@@ -13,7 +13,7 @@
     /* height: 20rem; */
     border-radius: 20px;
     display: flex;
-    box-shadow: 9px 9px 19px 0px #0000001a;
+    /* box-shadow: 9px 9px 19px 0px #0000001a; */
     flex-direction: column;
     padding: 0px 10px;
 
@@ -30,6 +30,7 @@
  font-weight: 280;
  color: rgb(100, 98, 98);
  color: #eb6a2e;
+ color: #001c28;
  text-align: left;
 }
 
@@ -40,7 +41,7 @@
  padding: 10px 20px;
  font-size: 13px;
  color: #57524f;
- border-bottom:1px solid #ff6b06;
+ border-bottom:1px solid #001c28;
  background-color: transparent;
 -moz-appearance:none; /* Firefox */
 -webkit-appearance:none; /* Safari and Chrome */
@@ -56,11 +57,13 @@
 .form button{
     margin: auto;
     margin-top: 8%;
-    border: 2px solid #e55829;
+    border: 2px solid #001c28;
+    border: none;
     border-radius: 20px;
     background-color: white;
     /* border: none; */
     color: #e55829;
+    color: #001c28;
     width: -moz-fit-content;
     width: fit-content;
     position: relative;

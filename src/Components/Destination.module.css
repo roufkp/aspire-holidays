@@ -13,9 +13,9 @@
 .div002{
   display: flex;
     
-  margin: 10px 0 50px 0;
+  margin: auto;
     width: 90%;
-    max-width: 1050px;
+    max-width: 850px;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
@@ -42,8 +42,11 @@
 }
 
 .div003 p{
-   line-height: 22px;
-   text-align: left;
+  line-height: 22px;
+  text-align: left;
+  font-size: 15px;
+  color: whitesmoke;
+  color: #5d5b5b;
 }
 
 
@@ -52,8 +55,8 @@
     width: 300px;
     max-width: 90%;
     object-fit: cover;
-    border: 8px solid whitesmoke;
-    border-radius: 0px;
+    /* border: 8px solid whitesmoke; */
+    border-radius: 20px;
     box-shadow: 3px 4px 9px 0px #070a0a12;
   }  
 

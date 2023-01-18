@@ -1,11 +1,12 @@
 .div001{
-background-image: url('../../Assets/picture_014.jpg');
+background-image: url('../../Assets/bg1.jpg');
 width: 100%;
+/* background: linear-gradient(to bottom ,rgb(12, 8, 43),#e56329,rgb(28, 27, 27)); */
 margin: auto;
 min-height: 60vh;
 background-repeat: no-repeat;
 background-attachment: fixed;
-background-size: cover;
+background-size: cover;background-position: center;
 /* padding-top: 3%; */
 /* padding-left: 9%; */
 color: white;

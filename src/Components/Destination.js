@@ -1,32 +1,10 @@
 import { useState } from "react";
 import styles from './Destination.module.css';
 
-import img1  from '../Assets/picture_003.jpg';
-import img2  from '../Assets/picture_005.jpg';
-import img3  from '../Assets/picture_002.jpg';
-import img4  from '../Assets/picture_008.jpg';
-import img5  from '../Assets/picture_007.jpg';
 import img6  from  '../Assets/picture_011.jpg';
-import img7  from  '../Assets/picture_010.jpg';
-import IMg8  from  '../Assets/picture_010.jpg' 
-
 const Destinations = () => {
 
-const initDestianions = [
-{place1:'Munnar',
- image1: img7,
 
-}, 
- {place1:'Jammu',
- image1: img4,
-
-},
-{place1:'Munnar',
- image1: img7,
-
-},
-
-];
 
 
 

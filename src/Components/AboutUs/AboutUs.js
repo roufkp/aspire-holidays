@@ -2,51 +2,22 @@ import Navigation from "../Navigation";
 import Footer from "../Footer";
 import styles from './AboutUs.module.css';
 import meeting from '../../Assets/meeting_1.jpg';
-import staff1 from '../../Assets/menoffice.png';
-import staff2 from '../../Assets/jhonMathew.jpg';
-import staff3 from '../../Assets/officemen2.jpeg';
-import staff4 from '../../Assets/women.jpg';
 import Text from 'react-text';
+import img001 from '../../Assets/team.png';
 
 const AboutUs = () => {
 
 return(
     <div>
         <Navigation path='about_us'/>
+        <div className={styles.div000}>
 
         <div className={styles.div007}>
-            <div className={styles.div007a}>
-               <h1> Team Aspire Holidays</h1>
-               <div className={styles.div002a}>
-                   <div className={styles.div006}>
-                      <img src={staff1} alt='staff'></img>
-                      <p  className={styles.p001}>JOHN MATHEW</p>
-                      <p className={styles.p002}>Comany Chairman</p>
-                      <div></div>
-                   </div>
-                   <div className={styles.div006}>
-                      <img src={staff2} alt='staff'></img>
-                      <p className={styles.p001}>MUHAMMED FASAL</p>
-                      <p className={styles.p002}>Marketing Manager</p>
-                      <div></div>
-                   </div>
-                   <div className={styles.div006}>
-                      <img src={staff3} alt='staff'></img>
-                      <p className={styles.p001}>NEERAJ SUNDAR</p>
-                      <p className={styles.p002}>Finance Executive</p>
-                      <div></div>
-                   </div>
-                   <div className={styles.div006}>
-                      <img src={staff4} alt='staff'></img>
-                      <p className={styles.p001}>JENNET JIXON</p>
-                      <p className={styles.p002}>Travel Consultant</p>
-                      <div></div>
-                   </div>
-               </div>
-               </div>
+           
         </div>
 
         <div className={styles.div001}>
+        <img src={img001} alt="" />
             <h1>Company Profile</h1>
             <p>We are the leading travel agents of Varanasi. Our IATA code (14361863), we are member of TAAI ,TAFI, IAAI ,Incredible India!, IATO, OTOAI and officially
                appointed for Singapore High Commission. Aspire Holidays Ltd. commenced its operations in 1994 with a full bouquet of services, a team of travel and tourism
@@ -87,7 +58,7 @@ return(
                  world. The company today holds more than 100,000 satisfied travellers and is still framing the travel diaries of fresh clients</p>
             </div>
         </div>
-      
+      </div>
         <Footer/>
     </div>
 )

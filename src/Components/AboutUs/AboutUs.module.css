@@ -2,6 +2,10 @@
     --primary: rgb(12, 8, 43);
     --secondary: #f87700;
   }
+  .div000{
+    background-color: white;
+    margin-top: 0;
+  }
 h1{
 font-weight: 600;
 font-size: 1.8rem;
@@ -12,9 +16,18 @@ text-align: center;
 .div001{
     width: 90%;
     text-align: left;
-    margin: 100px auto 100px auto;
-    line-height: 25px;   
+    display: flex;
+    padding-top: 70px;
+    margin: auto auto 100px auto;
+    line-height: 25px;
     max-width: 1150px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.div001 img{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
 }
 
 .div002{
@@ -44,7 +57,8 @@ text-align: center;
     
     width: 450px;
     max-width: 100%;
-    border: 8px solid white;    
+    /* border: 8px solid white;     */
+    border-radius: 20px;
     box-shadow:3px 4px 20px 0px rgb(14 13 13 / 10%);
 }
 @media (max-width:510px) {
@@ -59,7 +73,7 @@ text-align: center;
 }
 
 .div003{
-    width: 95%;
+    width: 90%;
     max-width: 700px;
     /* max-width: 400px; */
     text-align: left;
@@ -91,7 +105,19 @@ text-align: center;
 
 .div005{
     width: auto;
+    display: flex;
+    flex: 50%;
     margin: 50px auto 0 auto;
+    min-width: 320px;
+    max-width: 100%;
+    /* padding: 0 10px; */
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+
+}
+.div005 p{
+    max-width: 95%;
 }
 
 .div002a{
@@ -101,7 +127,6 @@ text-align: center;
     margin: 4% 7% 4% 7%;
     justify-content: space-around;
 }
-
 
 .div006{
     display: flex;

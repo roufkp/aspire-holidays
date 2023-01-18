@@ -39,6 +39,7 @@ const Destinations = () => {
     return(
        <div>
          <Navigation path="destinations"></Navigation>
+         <div className={styles.div000}>
          <div className={styles.div001}>
             <div className={styles.div002}>
               <img  className={styles.img001}src={Travel} alt='traveling couple'></img>
@@ -191,6 +192,7 @@ const Destinations = () => {
               </div>
          </div>
          <CoustomBand />
+         </div>
          <Footer/>
        </div>
     )

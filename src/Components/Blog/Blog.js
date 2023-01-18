@@ -7,6 +7,7 @@ import { GetApI,PostAPI } from '../Api/ApiInterface';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
 import CircularProgress from '@mui/material/CircularProgress';
+import admin from '../../Assets/user.png';
 
 
 const Blog = () => {
@@ -80,6 +81,7 @@ const Blog = () => {
     
     <div className={styles.div006}>
         <Navigation />
+        <div className={styles.div0000}>
         <div className={styles.div00}>
         <h1>{blogInfo.head}</h1>
         <div className={styles.div002a}>
@@ -95,6 +97,7 @@ const Blog = () => {
            <img  className={styles.img002} src={blogInfo.img2} alt="traveling"></img>          
         </div>
         {edit && <button onClick={() => history('/updateBlog/'+ blogInfo.uuid)}>Edit</button>}
+        </div>
         </div>
         <Footer/>
         </div>;
@@ -131,9 +134,10 @@ const Blog = () => {
         {showloader&& <div style={{width:"100vw",height:"70vh", display:"flex",alignItems:"center",justifyContent:"center"}}> <CircularProgress disableShrink /></div>}
         <div className={styles.div000}>
            {BlogOutLook}
-        </div>
-        {!edit &&<button className={styles.button001} onClick={() => history('/adminlogin')}>Admin Login</button>}
+           {!edit &&<button className={styles.button001} onClick={() => history('/adminlogin')}><img src={admin} alt="" /></button>}
         {edit&&<button className={styles.button001} onClick={onLogoutHandler}>Logout</button>}
+        </div>
+       
        <Footer />  
        </div>: DsiplayBlog }
      </div>

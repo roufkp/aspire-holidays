@@ -1,3 +1,6 @@
+.div000{
+  background-color: white;
+}
 .div001{
     width: 100%;
     display: flex;
@@ -10,7 +13,8 @@
 }
 .img001{
     width: 450px;
-    border:10px solid white;
+    /* border:10px solid white; */
+    border-radius: 20px;
     max-width: 90%;
     box-shadow: 3px 4px 20px 0px rgb(14 13 13 / 10%) ;
 }
@@ -18,8 +22,9 @@
  .img001{
   
       width: 450px;
-      max-width: 100%;
+      max-width: 98%;
       border: none;    
+      margin: auto;
       box-shadow: none ;
   }
   

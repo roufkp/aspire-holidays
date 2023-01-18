@@ -14,31 +14,39 @@ import img001 from '../Assets/dubai-trending.jpg';
 import img002 from '../Assets/maldives-trending.jpg';
 import img003 from '../Assets/paris-trending.jpg';
 import img004 from '../Assets/italy-trending.jpg';
+import dream from '../Assets/dream.png';
+import plan from '../Assets/task.png';
+import makeit from '../Assets/make-it-happen.png';
 
 
 function Home(){
     const [index, setIndex] = React.useState(0);
   return(
-    <div className={styles.div000}>
+    <div className={styles.div0001}>
+        <div className={styles.div000}>
         <div className={styles.div001}>          
             <Navigation path='home'/>
             <div className={styles.div002a}>
                 <div className={styles.div004}>
-                <div className={styles.div003a}>Aspire Holidays</div>
+                {/* <div className={styles.div003a}>Aspire Holidays</div> */}
                     <div className={styles.div003}>Make it a Reality</div>
                     <div className={styles.div003p}>
-                    <p> A picture is worth a thousand words , but a memory is priceless. Create your memories. Our most valuable possession. </p>
-           
+                    {/* <p> A picture is worth a thousand words , but a memory is priceless. Create your memories. Our most valuable possession. </p>
+            */}
                     </div>
                     <div className={styles.div003pc}>
-                        Book your dream vacation now !
-                        <button>Book right  now</button>
+                       
+                        <button>Make your's</button>
                     </div>
                    
                 </div>     
                 
             </div>
+            <div className={styles.band}>
+                <button><img src={dream} alt="" /></button><button><img src={plan} alt="" /></button><button><img src={makeit} alt="" /></button>
+            </div>
         </div>
+        <div className={styles.div0010}> 
         <div className={styles.div0011}> 
         <TripPlan/>
             <div className={styles.div0011a}>
@@ -49,6 +57,7 @@ function Home(){
             </div>
 
             
+        </div>
         </div>
          <h1 className={styles.carousalHeading}>Trending Destinations</h1>
         <Carousel className={styles.caro} 
@@ -69,7 +78,7 @@ function Home(){
                     </div>
                     <div  className={styles.caroText}>
                         <div  className={styles.caroTextHeading}>
-                                DUBAI
+                                Dubai
                         </div>
                     </div>
             </div>
@@ -80,7 +89,7 @@ function Home(){
                 </div>
                 <div  className={styles.caroText}>
                     <div  className={styles.caroTextHeading}>
-                            MALDIVES
+                            Maldives
                     </div>
                 </div>
         </div>
@@ -92,7 +101,7 @@ function Home(){
                 </div>
                 <div  className={styles.caroText}>
                     <div  className={styles.caroTextHeading}>
-                            PARIS
+                            Paris
                     </div>
                 </div>
         </div>
@@ -104,15 +113,20 @@ function Home(){
                 </div>
                 <div  className={styles.caroText}>
                     <div  className={styles.caroTextHeading}>
-                            ITALY
+                            Italy
                     </div>
                 </div>
         </div>
         </Carousel>
         <Destinations></Destinations>
+        <div  className={styles.container}>
         <Testimonials styles="margin-top:70px"/>
         <CoustomBand />
+        </div>
+        
+        </div>
         <Footer />
+        
     </div>
     )
 }

@@ -1,7 +1,6 @@
 import styles from './contactUs.module.css';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
-
 import { SocialIcon } from 'react-social-icons';
 import MyForm from '../contactForm/ContactForm';
 

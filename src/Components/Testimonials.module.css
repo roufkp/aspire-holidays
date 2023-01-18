@@ -4,11 +4,12 @@
     padding: 20px 0 10px 0;
     background: #ff6b06;
     background: #f5f5f5;
-    background: rgb(19, 18, 18);
-    /* background-image: url('../Assets/dezert1.jpg'); */
+    background: transparent;
+    /* background-image: url(../Assets/dezert1.jpg); */
+    /* background: linear-gradient(45deg, rgb(12 8 43), #ff6b06); */
     background-attachment: fixed;
     background-position: center;
-    background-size:contain ;
+    background-size: contain;
 }
 
 .div00{
@@ -44,21 +45,25 @@
     margin: auto;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 0px 5px 20px rgba(147, 144, 144, 0.459); 
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 33%);
 }
 
-
-.div003{
-    width: 90%;
+.div0030{
     display: flex;
     justify-content: flex-start;
-    margin:auto auto auto auto ;
+    align-items: center;
+}
+.div003{
+       /* width: 90%; */
+       display: flex;
+       justify-content: flex-start;
+       margin: 10px;
 }
 .img000{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 .div004{
     width: 98%;
@@ -69,11 +74,11 @@
     font-size: 0.9rem;
 }
 .div004 p{
-    padding-left: 10px;
+    padding: 10px;
 }
 
 .div005{
-    margin: auto auto 20px auto;
+    /* margin: auto auto 20px auto; */
     text-align: left;
     font-family: 'DM Sans', sans-serif;
 }
@@ -92,6 +97,7 @@
     width: fit-content;
     color:whitesmoke;
     background-color: #ff6b06;
+    background-color: #131212;
     box-shadow: 0px 5px 20px rgb(44 43 43,.5);
     font-family: 'DM Sans', sans-serif;
     font-weight: 800;
