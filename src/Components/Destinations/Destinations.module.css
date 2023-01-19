@@ -1,5 +1,9 @@
 .div000{
   background-color: white;
+  background-image: url('../../Assets/flight1.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ 
 }
 .div001{
     width: 100%;

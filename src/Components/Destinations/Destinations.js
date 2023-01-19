@@ -16,12 +16,35 @@ import img7  from '../../Assets/London.jpg';
 import img8  from '../../Assets/Albania.jpg';
 import Flip from './Flip';
 
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 
 const Destinations = () => {
+  const [offset, setOffset] = useState(0);
+    const [planePosition, setPlanePosition] = useState([-220,30,0]);
+    useEffect(() => {
+      const onScroll = () => {
+        setOffset(window.pageYOffset)
+      //   setPlanePosition((prev) => {
+      //  if (window.pageYOffset > prev[2]){
+      //   return(
+      //     [-220 + window.pageYOffset / 21.74, 30 - window.pageYOffset / 500, window.pageYOffset])
+      //   }else{
+      //     return(
+      //     [-120 - window.pageYOffset / 21.74, 26 + window.pageYOffset / 500, window.pageYOffset])
+      //   }
+      //   })
+      
+      };
 
+      // clean up code
+      window.removeEventListener('scroll', onScroll);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  console.log(offset,"scrolling")
   
     const {isOpen , setIsOpen}=useState(false);
    
@@ -39,7 +62,7 @@ const Destinations = () => {
     return(
        <div>
          <Navigation path="destinations"></Navigation>
-         <div className={styles.div000}>
+         <div className={styles.div000} style={{backgroundPosition: `${(offset/1.69875 - 220)}% ${( 30- offset/135.9)}%`}} onScroll={(event) => {console.log(event,"iiiiiiiii")}}>
          <div className={styles.div001}>
             <div className={styles.div002}>
               <img  className={styles.img001}src={Travel} alt='traveling couple'></img>
