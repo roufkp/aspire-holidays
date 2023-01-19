@@ -148,10 +148,10 @@
   .button001{
     border-radius: 100px;
     /* background-color: #f77117; */
-    color: white;
+    color: #f77117;
     /* padding: 20px; */
     height: 40px;
-    width: 40px;
+    min-width: 40px;
     /* padding: 10px 25px; */
     top: 100px;
     position: absolute;
@@ -171,7 +171,7 @@
   }
 
   .button001:hover{
-    background-color: #f78438;;
+    background-color: #e4c0a8;;
   }
   .div00{
     background: rgb(243, 246, 248);

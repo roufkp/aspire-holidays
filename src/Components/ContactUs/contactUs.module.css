@@ -1,5 +1,6 @@
 .div001{
 background-image: url('../../Assets/bg1.jpg');
+background-color: white;
 width: 100%;
 /* background: linear-gradient(to bottom ,rgb(12, 8, 43),#e56329,rgb(28, 27, 27)); */
 margin: auto;
