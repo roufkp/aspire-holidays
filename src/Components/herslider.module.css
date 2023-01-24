@@ -1,6 +1,6 @@
 
 .div001,.div0011 ,.div0012{
-    height: 100vh;
+    height: calc(100vh - 100px);
     width: 100vw;
     background-position: center;
     background-size: cover;
@@ -9,9 +9,14 @@
     flex-direction: column;
     align-items: center;
 
+
 }
 .div001{
-    background-image: url('../Assets/eiffeltower-1674209929387-4797.jpg');
+    background-image: url('../Assets/eifel3.jpg');
+    color: darkred;
+}
+.div001 .calltoaction{
+color: white;
 }
 .div0011{
     background-image: url('../Assets/turkey1.jpg');
@@ -19,13 +24,59 @@
 .div0012{
     background-image: url('../Assets/seashore.jpg');
 }
+.div002a{
+ min-height: 100%;
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.div002{
+  
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+
+}
 .header{
   display: flex;
   justify-content: center;
   font-size: 3rem;
   font-family: 'Cinzel', serif;
+  width: 600px;
+  margin:0 auto;
+  align-items: center;
+  max-width: 90vw;
+}
+.subheader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'DM Sans', serif;
   width: 500px;
-  max-width: 90%;
+  margin:0 auto;
+  max-width: 90vw;
+}
+.calltoaction{
+  display: flex;
+  color: #000;
+  flex-direction: column;
+  /* margin: 30px auto auto auto; */
+  margin-top: 30px;
+  font-family: 'DM Sans',sans-serif;
+}
+.calltoaction button{
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: aliceblue;
+  box-shadow: 3px 4px 9px 0px #0d171a12;
+  border-radius: 20px;
+  margin: auto;
+  font-family: 'DM Sans',sans-serif;
 }
 .band{
     display: flex;
@@ -34,12 +85,12 @@
     flex-direction: row;
     align-content: center;
     justify-content: space-evenly;
-    margin: 30px auto;
+    margin:  50px auto 0 auto;
   }
   .band button{
     border-radius: 10px;
     /* background-color: rgb(255, 255, 255); */
-    background: #727272;
+    background: #c7dddf8d;
     border: none;
     box-shadow: 3px 4px 9px 0px #00000059;
     margin: 20px;
@@ -48,6 +99,6 @@
     justify-content: center;
   }
   .band button img{
-    width: 50px;
+    width: 30px;
     height: auto;
   }
