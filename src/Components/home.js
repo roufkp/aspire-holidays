@@ -17,6 +17,7 @@ import img004 from '../Assets/italy-trending.jpg';
 import dream from '../Assets/dream.png';
 import plan from '../Assets/task.png';
 import makeit from '../Assets/make-it-happen.png';
+import FullScreenSlider from './her-slider';
 
 
 function Home(){
@@ -26,26 +27,11 @@ function Home(){
         <div className={styles.div000}>
         <div className={styles.div001}>          
             <Navigation path='home'/>
-            <div className={styles.div002a}>
-                <div className={styles.div004}>
-                {/* <div className={styles.div003a}>Aspire Holidays</div> */}
-                    <div className={styles.div003}>Make it a Reality</div>
-                    <div className={styles.div003p}>
-                    {/* <p> A picture is worth a thousand words , but a memory is priceless. Create your memories. Our most valuable possession. </p>
-            */}
-                    </div>
-                    <div className={styles.div003pc}>
-                       
-                        <button>Make your's</button>
-                    </div>
-                   
-                </div>     
-                
-            </div>
-            <div className={styles.band}>
-                <button><img src={dream} alt="" /></button><button><img src={plan} alt="" /></button><button><img src={makeit} alt="" /></button>
-            </div>
+            
+            
+            
         </div>
+        <FullScreenSlider/>
         <div className={styles.div0010}> 
         <div className={styles.div0011}> 
         <TripPlan/>

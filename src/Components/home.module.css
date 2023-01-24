@@ -2,7 +2,7 @@
   background-color: #e56829;
   background-color: white;
 }
-.div001 {
+/* .div001 {
   width: 100%;
   background: linear-gradient(180deg,#e56829),rgb(24 33 48),rgb(255, 255, 255);
   min-height: 60vh;
@@ -11,14 +11,15 @@
   background-image: url('../Assets/bg5.jpg');
   background-image: url('../Assets/bg7.png');
   background-image: url('../Assets/bg6.jpg');
+  background-image: url('../Assets/eifeltower1.jpg');
   
   /* background-image: url('../Assets/Flight.jpg');
-  background-image: url('../Assets/travelling-bg.png'); */
+  background-image: url('../Assets/travelling-bg.png'); 
   background-repeat: no-repeat;
   display: flex;
   overflow: hidden;
   /* background-size: 40%;
-  background-position: 100% 100%; */
+  background-position: 100% 100%;
   background-size: cover;
   background-position: center;
   justify-content: flex-start;
@@ -26,6 +27,9 @@
   align-content: center;
   align-items: center;
   
+  } */
+  .div001{
+    background-color: #001c28;
   }
   @media  (max-width:700px) {
 
