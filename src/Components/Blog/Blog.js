@@ -77,6 +77,9 @@ const Blog = () => {
     onFetchHandler()
     },[]);
 
+
+    const img1path = blogInfo.img1?.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg');
+    const img2path = blogInfo.img2?.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg');
     const DsiplayBlog =
     
     <div className={styles.div006}>
@@ -85,16 +88,18 @@ const Blog = () => {
         <div className={styles.div00}>
         <h1>{blogInfo.head}</h1>
         <div className={styles.div002a}>
-        <img  className={styles.img002} src={blogInfo.img1} alt="paris"></img>
+        <img  className={styles.img002} src={img1path} alt="paris"></img>
           <div className={styles.div007b}>
-            {blogInfo.content1?.split("<brakeo$qexc>").map(para => {if (para !== ''){return(<p>{para}</p>)}})}
+            {blogInfo.content1}
+            {/* ?.split("<brakeo$qexc>").map(para => {if (para !== ''){return(<p>{para}</p>)}})} */}
           </div>          
         </div>
         <div className={styles.div002a}>
           <div className={styles.div007a}>
-            {blogInfo.content2?.split("<brakeo$qexc>").map(para => {if (para !== ''){return(<p>{para}</p>)}})}
+            {blogInfo.content2}
+            {/* ?.split("<brakeo$qexc>").map(para => {if (para !== ''){return(<p>{para}</p>)}})} */}
           </div>    
-           <img  className={styles.img002} src={blogInfo.img2} alt="traveling"></img>          
+           <img  className={styles.img002} src={img2path} alt="traveling"></img>          
         </div>
         {edit && <button onClick={() => history('/updateBlog/'+ blogInfo.uuid)}>Edit</button>}
         </div>
@@ -104,19 +109,24 @@ const Blog = () => {
         
 
 
-    const BlogOutLook = availableBlog.map((e) =>
+    const BlogOutLook = availableBlog.map((e) =>{
+     const img1pathu = e.img1.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg');
+     console.log(img1pathu ,"bbbbbbb")
+      console.log(e,"each blog");
+      return(
           <div className={styles.div001}>
              <div className={styles.div002}>
-                <img  className={styles.img001}src={e.img1} alt="blogimg"></img>
+                <img className={styles.img001} src={img1pathu} alt="blogimg"></img>
                 <div className={styles.div003}>
                     <h1>{e.head}</h1>
-                    {e.content1?.split("<brakeo$qexc>").map(para => {if (para !== ''){return(<p>{para}</p>)}})} 
+                    {e.content1}
+                    {/* // ?.split("<brakeo$qexc>").map(para => {if (para !== ''){return(<p>{para}</p>)}})}  */}
                 </div>
              </div>
             <div className={styles.div004}>
             <button  onClick={() => onFetchFullBLog(e.uuid)}>View more</button>
             </div>
-          </div>
+          </div>)}
     );
   
 

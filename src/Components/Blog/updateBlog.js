@@ -11,7 +11,9 @@ import { GetApI,PostAPI } from '../Api/ApiInterface';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
 import CircularProgress from '@mui/material/CircularProgress';
-
+import axios from 'axios';
+// const axios = require('axios');
+const FormData = require('form-data');
 
 
 const init = {img1:null,img2:null,head:"",content1:"",content2:""};
@@ -73,25 +75,76 @@ const onChange = (e,Img) => {
     };
       
     const  onSubmitHandler = () => {
-      var txt1 = document.getElementById("text-area-first").value;
-      var txt2 = document.getElementById("text-area-second").value;
-      var txtt1store =  txt1.replace(/\n/g, "<brakeo$qexc>");
-      var txtt2store =  txt2.replace(/\n/g, "<brakeo$qexc>");
-      const Body = {...BlogState,content1:txtt1store, content2:txtt2store};
-      setShowLoader((prev) => {return({...prev,update:true})}) 
-      if(param.forwardPath){
-        PostAPI({path:"/updateblogs"
-        ,body:JSON.stringify({...Body,uuid:param.forwardPath})
-        ,type:'application/json'
-        ,callbackfunc:getblogs
-      });
+     //var txt1 = document.getElementById("text-area-first").value;
+     //var txt2 = document.getElementById("text-area-second").value;
+     //var txtt1store =  txt1.replace(/\n/g, "<brakeo$qexc>");
+     //var txtt2store =  txt2.replace(/\n/g, "<brakeo$qexc>");
+     //const Body = {...BlogState,content1:txtt1store, content2:txtt2store};
+
+      // const body = new FormData
+      // body.append("img1", `"${BlogState.img1}"`)
+      // body.append("", "\\")
+      // body.append("img2", `"${BlogState.img2}"`)
+      // body.append("", "\\")
+      // body.append("content1", `"${txt1}"`)
+      // body.append("", "\\")
+      // body.append("content2", `"${txt1}"`)
+      // body.append("", "\\")
+      // body.append("head", `"${BlogState.head}"`)
+
+      const form = new FormData();
+      form.append('img1', `${BlogState.img1}`);
+      form.append('img2', `${BlogState.img2}`);
+      form.append('content1', `${BlogState.content1}`);
+      form.append('content2', `${BlogState.content2}`);
+      form.append('head', `${BlogState.head}`);
+
+      console.log("formdata", form)
+      // setShowLoader((prev) => {return({...prev,update:true})}) 
+       if(param.forwardPath){
+        const path = "https://aspireholidaysltd.com/v1/updateblogs/" + param.forwardPath
+        axiospost(path,form);
+       }
+      //   PostAPI({path:"/updateblogs/" + param.forwardPath
+      //   ,body:body
+      //   ,type:undefined
+      //   ,callbackfunc:getblogs
+      // });
+    else{
+      const path = 'https://aspireholidaysltd.com/v1/putblogs'
+        axiospost(path,form);
+      
       }
-      PostAPI({path:"/putblogs"
-      ,body:JSON.stringify(Body)
-      ,type:'application/json'
-      ,callbackfunc:getblogs
-    });
-  }
+    //   PostAPI({path:"/putblogs"
+    //   ,body:body
+    //   ,type:undefined
+    //   ,callbackfunc:getblogs
+    // });
+  
+  //}
+};
+
+const axiospost = async (path, form) =>{
+     console.log("axios request called")
+     axios.post(
+    path,
+    form,
+    {
+        headers: {
+            "Content-Type": "multipart/form-data",
+            'Cookie': 'aspire-x-auth-key=522r36fvbcbvc5qrwe65rfwytgdcv; Version=1; Path=/; SameSite=None; Secur'
+        }
+    }
+).then((res) => {
+  console.log(res);
+})
+.catch((err) => {
+  console.log(err);
+});
+
+// console.log(response,"axiospost")
+
+} 
 
   const getblogs = (Data) => {
      setShowLoader((prev) => {return({...prev,update:false})}) 
@@ -144,7 +197,8 @@ const onChange = (e,Img) => {
     GetApI({path:"/getblogs/" + e , callbackfunc:getFullblogs}) 
   }; 
   
-
+  const img1path = BlogState.img1?.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg');
+  const img2path = BlogState.img2?.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg');
  return(<div className={styles.div000}>
     <div className={styles.div001}>
     <Stack sx={{ width: '50%', display:error?'block':'none',position:"fixed",marginTop:'10rem' }} spacing={2}>
@@ -164,7 +218,7 @@ const onChange = (e,Img) => {
         </div>
            <div className={styles.div003}>
            <div className={styles.div004}>
-             <img src={BlogState.img1 === null?addicon:BlogState.img1} className={BlogState.img1 === null ? styles.img002:styles.img002a} alt='addimage' onClick={() => displayModal("m1")}></img>
+             <img src={BlogState.img1 === null?addicon:img1path} className={BlogState.img1 === null ? styles.img002:styles.img002a} alt='addimage' onClick={() => displayModal("m1")}></img>
            </div>
              <div className={styles.div005}>
               <input type="text" placeholder='Type Your Heading'  value={BlogState.head} onChange={(e) => setBlogState((prev) => {return({...prev,head:e.target.value})})}></input>    
@@ -178,7 +232,7 @@ const onChange = (e,Img) => {
              <div onClick={() => setShowState(false)} className={styles.div009}>Prev</div></div>
            <div className={styles.div003}>
               <div className={styles.div004}>
-              <img src={BlogState.img2 === null?addicon:BlogState.img2} className={BlogState.img2 === null ? styles.img002:styles.img002a} alt='addimage' onClick={() => displayModal("m2")}></img>
+              <img src={BlogState.img2 === null?addicon:img2path} className={BlogState.img2 === null ? styles.img002:styles.img002a} alt='addimage' onClick={() => displayModal("m2")}></img>
               </div>
                 <div className={styles.div005b}>   
                   <textarea placeholder='Blog content'  id="text-area-second" value={BlogState.content2} onChange={(e) => onContentHandler(e,"content2")}></textarea>    
@@ -223,7 +277,7 @@ const onChange = (e,Img) => {
                 </div>
                 </div>
                 </Modal>
-                <Modal show={showModal.m1} close={() => closeModal("m1")}>
+                <Modal show={showModal.m1} close={() => {console.log("onclose called"); closeModal("m1")}}>
              <div className='div003'>
                     <div className='div0031' onClick={() => {closeModal("m1")}}>close</div>
                     <div className='div0032' onClick={() => {setBlogState((prev) => {return({ ...prev,"img1":cropData.img1})}); setCropData((prev) => {return({...prev,img1:'#'})}); closeModal("m1")}}>confirm</div>

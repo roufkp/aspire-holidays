@@ -74,7 +74,7 @@
     max-width: 90%;
     flex-direction: column;
     align-items: flex-start;
-    text-align: left;
+    text-align:justify
   }
 
   .div003 h1{
