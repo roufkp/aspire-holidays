@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap');
 .div000{
   background-color: #e56829;
   background-color: white;
@@ -36,6 +37,8 @@
     .div003{
     font-family: 'BebasNeueRegular', sans-serif;
     font-family: 'DM Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+
     font-size: 5rem;
    
     color: #e55829;
@@ -134,6 +137,8 @@
   .div003a{
     font-family: 'BebasNeueRegular', sans-serif;
     font-family: 'DM Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+
     font-size: 2rem;
    
     color: #e56829;
@@ -174,6 +179,8 @@
     margin-top: 15px;
     text-align: center;
     font-family: 'DM Sans',sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+
   }
   
   .div003pc{
@@ -191,6 +198,8 @@
     padding: 10px 20px;
     font-size: 16px;
     font-family: 'DM Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+
     background-color: #ff6b06;
     background-color: #001c28;
     color: white;
@@ -300,7 +309,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* text-align: left; */
+  text-align: left;
   width: 90%;
   margin: auto;
   max-width: 400px;
