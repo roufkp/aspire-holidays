@@ -18,8 +18,8 @@ const [state,setState] = useState(false)
 const onClickHandler =() => {
 setState(prev => !prev)
 };
-const homestyle = {backgroundColor:'transparent'}
-const secondaystyle = {backgroundColor:'#0C082B'} 
+const homestyle = {backgroundColor:'#001c28'}
+const secondaystyle = {backgroundColor:'#001c28'} 
 return(
   <div className={classes.div002} style= {props.path === 'home' ? homestyle : secondaystyle}>
                <img className={classes.img001} src={AspareLogo} alt='AspareLogo'></img>

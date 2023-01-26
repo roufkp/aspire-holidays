@@ -249,7 +249,7 @@ const axiospost = async (path, form) =>{
                <div className='div002'>
               <div className={"cropbox"}>
               <Cropper
-               style={{ height: 380, width: 450,backgroundColor:'green'}}
+               style={{ height: 380, width: 450,backgroundColor:'whitesmoke'}}
                initialAspectRatio={9/8}
                preview=".img-preview"
                src={images.img2}

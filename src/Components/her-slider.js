@@ -25,7 +25,7 @@ const FullScreenSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: false,
     cssEase: 'linear',
@@ -66,7 +66,8 @@ const FullScreenSlider = () => {
              Browse our website and find your dream holiday today!</p>
             </div>
             <div className={styles.calltoaction}>
-            <button>Book Now</button>
+              Ready for your Adventure!
+            <button>Call Now</button>
             </div>
           </div>
           {/* <img src={img2}alt="Slide 2" /> */}
