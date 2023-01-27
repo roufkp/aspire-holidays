@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from './Destination.module.css';
 
 import img6  from  '../Assets/picture_011.jpg';
+import img7 from '../Assets/travelling-man.png';
 const Destinations = () => {
 
 
@@ -11,7 +12,7 @@ const Destinations = () => {
 return(
     <div className={styles.div000}>
        <div className={styles.div002}>
-        <img src={img6} className={styles.img001}></img>
+        <img src={img7} className={styles.img001}></img>
         <div className={styles.div003}>
             <h2></h2>
           <p>

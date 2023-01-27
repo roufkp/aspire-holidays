@@ -114,8 +114,9 @@
   height: auto;
   margin-top: 10px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'DM Sans', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
   background-color: #001c28;
   color: white;
   border: none;
@@ -196,7 +197,7 @@
     height: auto;
     margin-top: 10px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'DM Sans', sans-serif;
     font-family: 'Lexend Deca', sans-serif;
 
@@ -269,17 +270,20 @@
   position: relative;
   border-radius:  10px 10px 0 0;
   width: 100px;
-  top: -20px;
+  top: -18px;
   background-color: rgb(255, 255, 255);
   color: #000;
-
+  font-family: 'Lexend Deca', sans-serif;
+font-weight: 800;
+font-size: 14px;
+letter-spacing: 2px;
 }
 .div0011a{
   background: transparent;
   color: #ff8800;
   color: #8c8c8c;
   display: flex;
-  opacity: 0.8;
+  opacity: 1;
   justify-content: center;
   align-items: flex-start;
   text-align: left;
@@ -287,6 +291,7 @@
   margin: auto;
   max-width: 300px;
   background-image: url('../Assets/travelling-items.png');
+  background-image: url('../Assets/travelling-couples.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 200px;
@@ -294,7 +299,7 @@
 }
 @media screen and (max-width:600px){
   .div0011a{
-   display: none;
+   display: inherit;
   }
   
   
@@ -317,6 +322,8 @@
   background-repeat: no-repeat;
   background-size: 200px;
   height: auto;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
 }
 .container{
   

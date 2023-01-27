@@ -24,7 +24,7 @@ color: inherit;
     background-image: url('../Assets/bg11.jpg');
 }
 .div002a{
- min-height: 100%;
+ min-height: 90vh;
   display: flex;
   background-color: transparent;
   flex-direction: column;
@@ -55,7 +55,8 @@ color: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 400;
   font-family: 'DM Sans', serif;
   font-family: 'Lexend Deca', sans-serif;
   width: 500px;
@@ -70,6 +71,8 @@ color: inherit;
   margin-top: auto;
   font-family: 'DM Sans',sans-serif;
   font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
 
 }
 .calltoaction button{
@@ -83,6 +86,7 @@ color: inherit;
   border-radius: 100px;
   /* margin:10px auto auto auto; */
   margin-top: 10px;
+  font-size: 15px;
   font-family: 'DM Sans',sans-serif;
   font-family: 'Lexend Deca', sans-serif;
 

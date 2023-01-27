@@ -1,9 +1,10 @@
 import Navigation from "../Navigation";
 import Footer from "../Footer";
 import styles from './AboutUs.module.css';
-import meeting from '../../Assets/meeting_1.jpg';
+import meeting from '../../Assets/meeting_1.png';
 import Text from 'react-text';
 import img001 from '../../Assets/team.png';
+import img002 from '../../Assets/team2.png';
 
 const AboutUs = () => {
 
@@ -19,14 +20,15 @@ return(
         <div className={styles.div001}>
         <img src={img001} alt="" />
             <h1>Company Profile</h1>
-            <p>We are the leading travel agents of Varanasi. Our IATA code (14361863), we are member of TAAI ,TAFI, IAAI ,Incredible India!, IATO, OTOAI and officially
-               appointed for Singapore High Commission. Aspire Holidays Ltd. commenced its operations in 1994 with a full bouquet of services, a team of travel and tourism
-               professionals. Now it has grown to be one of the largest Travel Management Companies in Varanasi with each of its products and services being of the distinct
-               quality. Aspire Holidays Ltd. a global travel network organization, offers a full range of Travel Management Services in both Corporate and Leisure Travel.
-               Established in the year 1994 in Varanasi, we have a proven track record and stability, experience and delivering on promise.</p>
-            <p>Over the years, we have grown to be the largest Travel Management Company in North India, with each of its product and service benchmarking the mark of
-               quality. Our Philosophy is to focus on offering a comprehensive and extensive range of services which deliver strategic value, innovative technology and true
-               Travel consulting. With our team of dedicated professional, global network, and state of art technology.</p>   
+            <p>Aspire Holidays Ltd. commenced its operations in 1994 with a full bouquet of services, a team of travel and tourism professionals. 
+                	Now it is connecting more people around the world and providing services in not just the UK but to the places 
+                    where the customers want their services.Aspire holidays has its privileged customers as family and friends 
+                        and is consistently growing its boundaries wider with more connections through our family. 
+
+Aspire Holidays Ltd. a global travel network organisation, offers a full range of Travel Management Services in both Corporate
+ and Leisure Travel.Our Philosophy is to focus on offering a comprehensive and extensive range of services which deliver strategic 
+ value, innovative technology and true Travel consulting. With our team of dedicated professional, global network, and state of art technology.   
+        </p>
         </div>
         <div className={styles.div002}>
             <div className={styles.div0021}>
@@ -36,26 +38,40 @@ return(
             <div className={styles.div003}>
                 <h1>Value We Carry</h1>
                 <ul>
-                    <li> 1. Ethical and professional service. </li>
-                    <li>  2. Integrity of thought and action. </li>
-                    <li> 3. Honouring our commitments to all our clients. </li>
-                    <li> 4. Providing genuine value through our products and services. </li>
-                    <li> 5. Constantly searching for the new on all fronts. </li>
-                    <li> 6. Empowering & motivating employees to realize their potential & caliberThe travel industries we handle are vast and comprise of several
-                        sectors including air tickets , Hotel bookings, Meetings, Incentive tours conferences , events and travel Insurance. </li>
+                    <li> 1. Treating customers as family and friends.</li>
+                    <li>  2. Consistently expanding our reach and connections. </li>
+                    <li> 3. Offering a comprehensive and extensive range of services. </li>
+                    <li> 4. Delivering strategic value and innovative technology. </li>
+                    <li> 5. Providing true travel consulting. </li>
+                    <li> 6. Having a team of dedicated professionals. </li>
+                    <li> 7. Operating with a global network. </li>
+                    <li> 8. Utilizing state of the art technology. </li>
+
                 </ul>
             </div>
         </div>
+        <img src={img002} alt="" />
         <div className={styles.div004}>
+
             <div  className={styles.div005}>
                 <h1>Why Us?</h1>
-                <p>Tour My India Pvt. Ltd. is an award winning travel organization and excels with quality services from its experienced staffs.
-                     Over the years the company has received positive feedbacks from its existing clients and hence one can expect a cordial reception.</p>
+                <p>At Aspire Holidays Ltd., we pride ourselves on our commitment to providing our customers with the best travel experience possible.
+                     As a global travel network organization, we have a wide reach and connections to ensure that we can provide our services wherever 
+                     our customers want to go. Our team of dedicated professionals, global network, and state-of-the-art technology allow us to offer a 
+                     comprehensive and extensive range of services, including travel management for both corporate and leisure travel. We treat our customers 
+                     as family and friends, and our philosophy is to deliver strategic value, innovative technology and true travel consulting to ensure that 
+                     every trip is a success. We are constantly expanding our reach and connections to provide more opportunities for our customers to explore 
+                     the world. We are passionate about travel and we believe that this is reflected in the quality of our service. Choose Aspire Holidays Ltd.
+                      and experience the difference.</p>
             </div>
             <div  className={styles.div005}>
                 <h1>Our Motto</h1>
-                <p>Customer satisfaction: It’s the prime motto of our business, which has helped us to build a good network with travellers from the farthest corners of the
-                 world. The company today holds more than 100,000 satisfied travellers and is still framing the travel diaries of fresh clients</p>
+                <p>Connecting more people around the world and providing services in not just the UK but to the 
+                    places where the customers want their services.</p>
+                 <h1>Our Vision</h1>
+                <p>To be a global travel network organization that offers a full range of Travel
+                     Management Services in both Corporate and Leisure Travel.</p>
+           
             </div>
         </div>
       </div>
