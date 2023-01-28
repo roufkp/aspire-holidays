@@ -19,6 +19,7 @@ color: inherit;
 }
 .div0011{
     background-image: url('../Assets/bg10.jpg');
+    color: aliceblue;
 }
 .div0012{
     background-image: url('../Assets/bg11.jpg');
@@ -73,7 +74,9 @@ color: inherit;
   font-family: 'Lexend Deca', sans-serif;
   font-size: 15px;
   font-weight: 500;
-
+}
+.div0011 .calltoaction{
+  color: aliceblue;
 }
 .calltoaction button{
   width: 150px;
