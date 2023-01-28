@@ -25,16 +25,18 @@ const FullScreenSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: false,
     cssEase: 'linear',
+    fade:true,
     arrows:false
   };
+  console.log(sliderRef,"sdfcfff")
 
   return (
     <div className="full-screen-slider">
-      <Slider ref={sliderRef => setSliderRef(sliderRef)} {...settings}>
+      <Slider ref={sliderRef =>{console.log(sliderRef,"..*88"); setSliderRef(sliderRef)}} {...settings}>
         <div className={styles.div001}>
         <div className={styles.div002a}>
               <div className={styles.div002}>
