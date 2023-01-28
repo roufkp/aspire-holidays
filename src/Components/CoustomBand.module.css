@@ -9,7 +9,7 @@
     font-size: 1.5rem;
     font-weight: 600;
     font-family: 'Dm', sans-serif;
-    
+    font-family: 'Lexend Deca', sans-serif;
   }
   h1{
     color: #5d5b5b;
@@ -23,6 +23,9 @@
     /* opacity: 0.8; */
     /* color: white; */
     border: none;
+    background-color: #001c28;
     font-family: 'DM Sans',sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     border-radius: 20px;
+    color: aliceblue;
   }

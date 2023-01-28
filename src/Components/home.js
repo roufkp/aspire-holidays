@@ -54,8 +54,9 @@ function Home(){
             showDots={true}
             rewind={true}
             rewindWithAnimation={true}
-            autoPlaySpeed={1000}
-            customTransition="all .5 linear" transitionDuration={1000}>
+            autoPlaySpeed={5000}
+            customTransition="all linear"
+            transitionDuration={1000}>
 
             <div   className={styles.caroItem}>
                 

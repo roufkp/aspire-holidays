@@ -68,7 +68,8 @@ const FullScreenSlider = () => {
              Browse our website and find your dream holiday today!</p>
             </div>
             <div className={styles.calltoaction}>
-            <button>Book Now</button>
+              Ready for your Adventure!
+            <button>Call Now</button>
             </div>
           </div>
           {/* <img src={img2}alt="Slide 2" /> */}

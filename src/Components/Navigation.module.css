@@ -99,7 +99,7 @@ right: 20px;
 .img005{
   width: 40px;
   height: auto;
-  position: fixed;
+  position: unset;
   right: 30px;
   top: 20px;
 }

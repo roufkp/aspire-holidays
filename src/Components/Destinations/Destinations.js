@@ -2,7 +2,7 @@ import styles from './Destinations.module.css';
 import Navigation from '../Navigation';
 import CoustomBand from '../CoustomBand';
 import Footer from '../Footer';
-import Travel from '../../Assets/travelers.jpg';
+import Travel from '../../Assets/Explore.png';
 import Modal from './Modal'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -15,6 +15,7 @@ import img6  from '../../Assets/Belgium.jpg';
 import img7  from '../../Assets/London.jpg';
 import img8  from '../../Assets/Albania.jpg';
 import Flip from './Flip';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import { useState,useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
@@ -79,7 +80,7 @@ const Destinations = () => {
          <div className={styles.div06}>
               <h1>Our Destinations</h1>
               <div className={styles.div061} >
-                
+              <ScrollAnimation animateIn="fadeIn">
                       <div className={styles.div006}>
                           <img className={styles.img002} src={img1} alt="desiantion"/>
                           <div  className={styles.div005}>
@@ -96,8 +97,10 @@ const Destinations = () => {
                              />}
                           </div>
                       </div>
+                 </ScrollAnimation>
 
 
+<ScrollAnimation animateIn="fadeIn">
 
                       <div className={styles.div006}>
                           <img className={styles.img002} src={img2} alt="desiantion"/>
@@ -114,8 +117,9 @@ const Destinations = () => {
                             Rome and Milan. Whether you're looking for a romantic getaway, a cultural adventure, or a relaxing beach vacation."
                              />}
                           </div>
-                      </div>
-                      <div className={styles.div006}>
+                      </div></ScrollAnimation>
+<ScrollAnimation animateIn="fadeIn">
+                        <div className={styles.div006}>
                           <img className={styles.img002} src={img3} alt="desiantion"/>
                           <div  className={styles.div005}>
                           <div className={styles.div004}>Paris</div>
@@ -130,8 +134,9 @@ const Destinations = () => {
                             leisurely stroll along the Champs-Élysées or explore some of the most beautiful parks, gardens, and architecture in Europe."
                              />}
                           </div>
-                      </div>
-                      <div className={styles.div006}>
+                      </div></ScrollAnimation>
+<ScrollAnimation animateIn="fadeIn">
+                        <div className={styles.div006}>
                           <img className={styles.img002} src={img4} alt="desiantion"/>
                           <div  className={styles.div005}>
                           <div className={styles.div004}>Turkey</div>
@@ -146,8 +151,9 @@ const Destinations = () => {
                             cities and friendly locals. With so much to offer, Turkey is an ideal destination for the adventurous traveller."
                              />}
                           </div>
-                      </div>
-                      <div className={styles.div006}>
+                      </div></ScrollAnimation>
+<ScrollAnimation animateIn="fadeIn">
+                        <div className={styles.div006}>
                           <img className={styles.img002} src={img5} alt="desiantion"/>
                           <div  className={styles.div005}>
                           <div className={styles.div004}>Switzerland</div>
@@ -163,8 +169,9 @@ const Destinations = () => {
                              making it a great destination for winter sports enthusiasts."
                              />}
                           </div>
-                      </div>
-                      <div className={styles.div006}>
+                      </div></ScrollAnimation>
+<ScrollAnimation animateIn="fadeIn">
+                        <div className={styles.div006}>
                           <img className={styles.img002} src={img6} alt="desiantion"/>
                           <div  className={styles.div005}>
                           <div className={styles.div004}>Belgium</div>
@@ -179,8 +186,9 @@ const Destinations = () => {
                               With its historical monuments, beautiful landscapes, and delicious food, Belgium is a must-visit destination."
                              />}
                           </div>
-                      </div>
-                      <div className={styles.div006}>
+                      </div></ScrollAnimation>
+<ScrollAnimation animateIn="fadeIn">
+                        <div className={styles.div006}>
                           <img className={styles.img002} src={img7} alt="desiantion"/>
                           <div  className={styles.div005}>
                           <div className={styles.div004}>London</div>
@@ -194,8 +202,9 @@ const Destinations = () => {
                              and attractions like Buckingham Palace, the London Eye, and more. Either you sit by Westminster bridge or go pub hopping in Soho."
                              />}
                           </div>
-                      </div>
-                      <div className={styles.div006}>
+                      </div></ScrollAnimation>
+<ScrollAnimation animateIn="fadeIn">
+                        <div className={styles.div006}>
                           <img className={styles.img002} src={img8} alt="desiantion"/>
                           <div  className={styles.div005}>
                           <div className={styles.div004}>Albania</div>
@@ -212,6 +221,7 @@ const Destinations = () => {
                              />}
                           </div>
                       </div>
+                      </ScrollAnimation>
               </div>
          </div>
          <CoustomBand />

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap');
 .div000{
   background-color: #e56829;
   background-color: white;
@@ -36,6 +37,8 @@
     .div003{
     font-family: 'BebasNeueRegular', sans-serif;
     font-family: 'DM Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+
     font-size: 5rem;
    
     color: #e55829;
@@ -85,7 +88,7 @@
     background-color: rgb(255 255 255);
     background: linear-gradient(to bottom,rgb(24 33 48),#e56829),white;
     background: linear-gradient(to bottom,rgb(0 28 40),rgb(203, 212, 226));
-    background: linear-gradient(to bottom,rgb(192 145 119),rgb(255 255 255));
+    background: linear-gradient(to bottom,rgb(226 172 143 / 55%),rgb(255 255 255));
    
   }
 .div0011{
@@ -111,8 +114,9 @@
   height: auto;
   margin-top: 10px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'DM Sans', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
   background-color: #001c28;
   color: white;
   border: none;
@@ -134,6 +138,8 @@
   .div003a{
     font-family: 'BebasNeueRegular', sans-serif;
     font-family: 'DM Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+
     font-size: 2rem;
    
     color: #e56829;
@@ -174,6 +180,8 @@
     margin-top: 15px;
     text-align: center;
     font-family: 'DM Sans',sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+
   }
   
   .div003pc{
@@ -189,8 +197,10 @@
     height: auto;
     margin-top: 10px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'DM Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+
     background-color: #ff6b06;
     background-color: #001c28;
     color: white;
@@ -215,9 +225,9 @@
 .carousalHeading{
   padding-top: 100px;
   margin: 0 auto;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Cinzel',serif;
   background: transparent;
-  color: white;
+  color: #001c28;
   }
 .caro{
   background: transparent;
@@ -260,17 +270,20 @@
   position: relative;
   border-radius:  10px 10px 0 0;
   width: 100px;
-  top: -20px;
+  top: -18px;
   background-color: rgb(255, 255, 255);
   color: #000;
-
+  font-family: 'Lexend Deca', sans-serif;
+font-weight: 800;
+font-size: 14px;
+letter-spacing: 2px;
 }
 .div0011a{
   background: transparent;
   color: #ff8800;
   color: #8c8c8c;
   display: flex;
-  opacity: 0.8;
+  opacity: 1;
   justify-content: center;
   align-items: flex-start;
   text-align: left;
@@ -278,6 +291,7 @@
   margin: auto;
   max-width: 300px;
   background-image: url('../Assets/travelling-items.png');
+  background-image: url('../Assets/travelling-couples.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 200px;
@@ -285,7 +299,7 @@
 }
 @media screen and (max-width:600px){
   .div0011a{
-   display: none;
+   display: inherit;
   }
   
   
@@ -300,7 +314,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* text-align: left; */
+  text-align: left;
   width: 90%;
   margin: auto;
   max-width: 400px;
@@ -308,6 +322,8 @@
   background-repeat: no-repeat;
   background-size: 200px;
   height: auto;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
 }
 .container{
   

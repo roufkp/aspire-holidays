@@ -12,6 +12,11 @@ font-size: 1.8rem;
 font-family: 'Dm sans', sans-serif;
 text-align: center;
 }
+img{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
 
 .div001{
     width: 90%;
@@ -20,7 +25,7 @@ text-align: center;
     padding-top: 70px;
     margin: auto auto 100px auto;
     line-height: 25px;
-    max-width: 1150px;
+    max-width: 1000px;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -59,7 +64,7 @@ text-align: center;
     max-width: 100%;
     /* border: 8px solid white;     */
     border-radius: 20px;
-    box-shadow:3px 4px 20px 0px rgb(14 13 13 / 10%);
+    box-shadow:3px 4px 20px 0px rgb(14 13 13 / 0%);
 }
 @media (max-width:510px) {
     .div002 img{
@@ -95,7 +100,7 @@ text-align: center;
     width: 90%;
     max-width: 1150px;
     text-align: left;
-    margin: 50px auto 100px auto;
+    margin: 0 auto 100px auto;
     line-height: 25px;
     justify-content: space-around;
     flex-wrap: wrap;

@@ -90,8 +90,9 @@
   }
 
   .img002a{
-    width : 24vw;
-    height: 45vh;
+    width : 400px;
+    max-width: 95vw;
+    height: auto;
   }
 
 

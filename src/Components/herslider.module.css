@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #0d171afa;
+
 }
 
 
@@ -17,25 +19,25 @@
 }
 
 .div001{
-    background-image: url('../Assets/eifel3.jpg');
-    color: darkred;
+    background-image: url('../Assets/bg12.jpg');
 }
 .div001 .calltoaction{
-color: white;
+color: inherit;
 }
 .div0011{
-    background-image: url('../Assets/turkey1.jpg');
+    background-image: url('../Assets/bg10.jpg');
 }
 .div0012{
-    background-image: url('../Assets/seashore.jpg');
+    background-image: url('../Assets/bg11.jpg');
 }
 .div002a{
- min-height: 100%;
+ min-height: 90vh;
   display: flex;
   background-color: transparent;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  text-align: left;
 }
 .div002{
   
@@ -43,6 +45,7 @@ color: white;
   background-color: transparent;
   flex-direction: column;
   justify-content: center;
+  margin-left: 5%;
 
 }
 .header{
@@ -50,7 +53,7 @@ color: white;
   justify-content: center;
   font-size: 3rem;
   font-family: 'Cinzel', serif;
-  width: 600px;
+  width: 500px;
   margin:0 auto;
   align-items: center;
   max-width: 90vw;
@@ -60,34 +63,44 @@ color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 400;
   font-family: 'DM Sans', serif;
+  font-family: 'Lexend Deca', sans-serif;
   width: 500px;
-  margin:0 auto;
+  margin:0 auto 0 auto;
   max-width: 90vw;
   animation: fadeIn 5s;
 }
 .calltoaction{
   display: flex;
-  color: #000;
+  color: #0d171afa;
   flex-direction: column;
   /* margin: 30px auto auto auto; */
-  margin-top: 30px;
-  font-family: 'DM Sans',sans-serif;
+  margin-top: auto;
   animation: fadeIn 5s;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
 }
 .calltoaction button{
   width: 150px;
   height: 40px;
+  color: aliceblue;
   border: none;
-  background-color: aliceblue;
+  font-weight: bolder;
+  background-color: #001c28;
   box-shadow: 3px 4px 9px 0px #0d171a12;
-  border-radius: 20px;
-  margin: auto;
+  border-radius: 100px;
+  /* margin:10px auto auto auto; */
+  margin-top: 10px;
+  font-size: 15px;
   font-family: 'DM Sans',sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
+
 }
 .band{
-    display: flex;
+    display: none;
     width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
@@ -109,4 +122,15 @@ color: white;
   .band button img{
     width: 30px;
     height: auto;
+  }
+  @media (max-width:700px) {
+  
+    .div001,.div0011 ,.div0012{
+      min-height: 100vh;
+      height: auto;
+  }
+  .header{
+    margin-top:100px ;
+    text-align: left;
+  }
   }
