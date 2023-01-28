@@ -78,9 +78,9 @@ const Destinations = () => {
          </div>
 
          <div className={styles.div06}>
-              <h1>Our Destinations</h1>
+              <h1 className={styles.head}>Our Destinations</h1>
               <div className={styles.div061} >
-              <ScrollAnimation animateIn="fadeIn">
+              
                       <div className={styles.div006}>
                           <img className={styles.img002} src={img1} alt="desiantion"/>
                           <div  className={styles.div005}>
@@ -97,10 +97,7 @@ const Destinations = () => {
                              />}
                           </div>
                       </div>
-                 </ScrollAnimation>
-
-
-<ScrollAnimation animateIn="fadeIn">
+              
 
                       <div className={styles.div006}>
                           <img className={styles.img002} src={img2} alt="desiantion"/>
@@ -117,8 +114,7 @@ const Destinations = () => {
                             Rome and Milan. Whether you're looking for a romantic getaway, a cultural adventure, or a relaxing beach vacation."
                              />}
                           </div>
-                      </div></ScrollAnimation>
-<ScrollAnimation animateIn="fadeIn">
+                      </div>
                         <div className={styles.div006}>
                           <img className={styles.img002} src={img3} alt="desiantion"/>
                           <div  className={styles.div005}>
@@ -134,8 +130,7 @@ const Destinations = () => {
                             leisurely stroll along the Champs-Élysées or explore some of the most beautiful parks, gardens, and architecture in Europe."
                              />}
                           </div>
-                      </div></ScrollAnimation>
-<ScrollAnimation animateIn="fadeIn">
+                      </div>
                         <div className={styles.div006}>
                           <img className={styles.img002} src={img4} alt="desiantion"/>
                           <div  className={styles.div005}>
@@ -151,8 +146,7 @@ const Destinations = () => {
                             cities and friendly locals. With so much to offer, Turkey is an ideal destination for the adventurous traveller."
                              />}
                           </div>
-                      </div></ScrollAnimation>
-<ScrollAnimation animateIn="fadeIn">
+                      </div>
                         <div className={styles.div006}>
                           <img className={styles.img002} src={img5} alt="desiantion"/>
                           <div  className={styles.div005}>
@@ -169,8 +163,7 @@ const Destinations = () => {
                              making it a great destination for winter sports enthusiasts."
                              />}
                           </div>
-                      </div></ScrollAnimation>
-<ScrollAnimation animateIn="fadeIn">
+                      </div>
                         <div className={styles.div006}>
                           <img className={styles.img002} src={img6} alt="desiantion"/>
                           <div  className={styles.div005}>
@@ -186,8 +179,7 @@ const Destinations = () => {
                               With its historical monuments, beautiful landscapes, and delicious food, Belgium is a must-visit destination."
                              />}
                           </div>
-                      </div></ScrollAnimation>
-<ScrollAnimation animateIn="fadeIn">
+                      </div>
                         <div className={styles.div006}>
                           <img className={styles.img002} src={img7} alt="desiantion"/>
                           <div  className={styles.div005}>
@@ -202,8 +194,7 @@ const Destinations = () => {
                              and attractions like Buckingham Palace, the London Eye, and more. Either you sit by Westminster bridge or go pub hopping in Soho."
                              />}
                           </div>
-                      </div></ScrollAnimation>
-<ScrollAnimation animateIn="fadeIn">
+                      </div>
                         <div className={styles.div006}>
                           <img className={styles.img002} src={img8} alt="desiantion"/>
                           <div  className={styles.div005}>
@@ -221,7 +212,7 @@ const Destinations = () => {
                              />}
                           </div>
                       </div>
-                      </ScrollAnimation>
+                     
               </div>
          </div>
          <CoustomBand />
