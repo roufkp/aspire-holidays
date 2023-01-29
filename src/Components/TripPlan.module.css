@@ -53,8 +53,7 @@
 
   
 .form button{
-    margin: auto;
-    margin-top: 8%;
+    margin: 0 auto;
     border: 2px solid #001c28;
     border: none;
     border-radius: 20px;
@@ -65,7 +64,6 @@
     width: -moz-fit-content;
     width: fit-content;
     position: relative;
-    margin-bottom: 20px;
     padding: 10px 20px;
     font-weight: 600px;
     font-family: 'DM SANS',sans-serif;
@@ -74,7 +72,10 @@
     box-shadow: 9px 9px 19px 0px #0000001a;
 }
 
-
+.box{
+    background-color: transparent;
+    border: none;
+}
 .slider {
     color: #eb6a2e;
   }

@@ -43,8 +43,8 @@ const TripPlan = () => {
      <form className={classes.form}>
         <div className={classes.div001}>
           <label>Enter Your Mail</label>
-          <Box sx={{ minWidth: 120 }} >
-            <TextField id="email" label="Email"  value={email} variant="outlined" onChange={handleChangeEmail}/>
+          <Box  sx={{ minWidth: 120 }} >
+            <TextField className={classes.box} id="email" label="Email"  value={email} variant="outlined" onChange={handleChangeEmail}/>
         </Box> 
         </div>
         <div className={classes.div001}>

@@ -23,6 +23,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-card-flip": "^1.2.0",
     "react-cropper": "^2.1.8",
+    "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-ionicons": "^4.2.0",

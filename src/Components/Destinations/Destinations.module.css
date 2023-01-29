@@ -30,6 +30,10 @@
   font-family: 'DM Sans', sans-serif;
   font-family: 'Cinzel', serif;
   font-weight: 800;
+  position: absolute;
+    left: 0;
+    top: auto;
+    transform: translate(0px, -40px);
   }
 .img001{
     width: 450px;

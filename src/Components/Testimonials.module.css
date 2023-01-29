@@ -11,13 +11,22 @@
     background-position: center;
     background-size: contain;
 }
-
+::-webkit-scrollbar { 
+    width: 0.2em;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
 .div00{
     display: flex;
     justify-content: space-evenly;
     margin: 10px auto 50px AUTO;
     flex-wrap: wrap;
+    height: 400px;
+    overflow-y: scroll;
     max-width: 1150px;
+    scrollbar-width: none;
 }
 
 .div001{
