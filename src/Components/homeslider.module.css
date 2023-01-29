@@ -1,0 +1,34 @@
+
+.div002{
+    background-color: transparent;
+    max-width: 1000px;
+    margin: auto;
+}
+.div003{
+    background-color: transparent;
+    max-width: 1000px;
+}
+.div003 img{
+    width:230px;
+    height: 280px;
+    margin: auto;
+    align-items: center;
+    box-shadow: 1px 3px 9px 0px rgb(0 0 0 / 25%) ;
+}
+.caroText{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 35px;
+    position: relative;
+    border-radius:  10px 10px 0 0;
+    width: 100px;
+    margin: auto;
+    top: -20px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    font-family: 'Lexend Deca', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 2px;
+  }

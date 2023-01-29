@@ -6,18 +6,13 @@ import AspareLogo  from '../Assets/Aspare-Logo.png'
 import Testimonials from './Testimonials';
 import Footer from './Footer';
 import CoustomBand from './CoustomBand';
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import responsive from '../Carousal';
 import React from "react";
-import img001 from '../Assets/dubai-trending.jpg';
-import img002 from '../Assets/maldives-trending.jpg';
-import img003 from '../Assets/paris-trending.jpg';
-import img004 from '../Assets/italy-trending.jpg';
 import dream from '../Assets/dream.png';
 import plan from '../Assets/task.png';
 import makeit from '../Assets/make-it-happen.png';
 import FullScreenSlider from './her-slider';
+import HomeSlider from './home-slider';
 
 
 function Home(){
@@ -46,65 +41,8 @@ function Home(){
         </div>
         </div>
          <h1 className={styles.carousalHeading}>Trending Destinations</h1>
-        <Carousel className={styles.caro} 
-            sliderClass='react-multi-carousel-track'
-            responsive={responsive}
-            infinite={true}
-            autoPlay={true}
-            showDots={true}
-            rewind={true}
-            rewindWithAnimation={true}
-            autoPlaySpeed={5000}
-            customTransition="all linear"
-            transitionDuration={1000}>
-
-            <div   className={styles.caroItem}>
-                
-                    <div  className={styles.caroImage}>
-                        <img src={img001} alt="" />
-                    </div>
-                    <div  className={styles.caroText}>
-                        <div  className={styles.caroTextHeading}>
-                                Dubai
-                        </div>
-                    </div>
-            </div>
-            <div   className={styles.caroItem}>
-                
-                <div  className={styles.caroImage}>
-                    <img src={img002} alt="" />
-                </div>
-                <div  className={styles.caroText}>
-                    <div  className={styles.caroTextHeading}>
-                            Maldives
-                    </div>
-                </div>
-        </div>
-           
-        <div   className={styles.caroItem}>
-                
-                <div  className={styles.caroImage}>
-                    <img src={img003} alt="" />
-                </div>
-                <div  className={styles.caroText}>
-                    <div  className={styles.caroTextHeading}>
-                            Paris
-                    </div>
-                </div>
-        </div>
-        
-        <div   className={styles.caroItem}>
-                
-                <div  className={styles.caroImage}>
-                    <img src={img004} alt="" />
-                </div>
-                <div  className={styles.caroText}>
-                    <div  className={styles.caroTextHeading}>
-                            Italy
-                    </div>
-                </div>
-        </div>
-        </Carousel>
+         <HomeSlider/>
+       
         <Destinations></Destinations>
         <div  className={styles.container}>
         <Testimonials styles="margin-top:70px"/>

@@ -1,13 +1,14 @@
 .div001{
-background-image: url('../../Assets/bg1.jpg');
-background-color: white;
+background-image: url('../../Assets/contactus.png');
+background-color: #001c28;
 width: 100%;
 /* background: linear-gradient(to bottom ,rgb(12, 8, 43),#e56329,rgb(28, 27, 27)); */
 margin: auto;
 min-height: 60vh;
 background-repeat: no-repeat;
 background-attachment: fixed;
-background-size: cover;background-position: center;
+background-size: 300px;
+background-position: 10%;
 /* padding-top: 3%; */
 /* padding-left: 9%; */
 color: white;
@@ -78,9 +79,10 @@ font-family: 'DM Sans', sans-serif;
     }
 
    h2{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 600;
     font-family: 'DM Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
    }
 
    .div004{
@@ -97,8 +99,8 @@ font-family: 'DM Sans', sans-serif;
     width:auto;
     height: auto ;
     font-size: 16px;
-    background-color:  #ff6b06;
-    color: white;
+    background-color:  aliceblue;
+    color: #001c28;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;

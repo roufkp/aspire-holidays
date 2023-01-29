@@ -8,6 +8,7 @@ form{
     border: 0px solid whitesmoke;
     padding: 20px 0;
     font-family: 'DM Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 label{
     width: auto;
@@ -45,9 +46,10 @@ select{
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 50%;
+    font-family: 'Lexend Deca', sans-serif;
    }
 .sub{
-    background: #ff6b06;
+    background: aliceblue;
     width: 300px;
     max-width: 80%;
     /* padding: 10px 20px; */
@@ -59,8 +61,12 @@ select{
     justify-content: center;
     border: none;
     align-items: center;
-    color: azure;
+    color: #001c28;
     border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Lexend Deca', sans-serif;
+    box-shadow: 0px 5px 20px rgb(44 43 43,.5);
 }
 .msg{
     height: 70px;

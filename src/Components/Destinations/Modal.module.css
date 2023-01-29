@@ -10,6 +10,7 @@
     display: flex;
     transition: all 0.15s ease;
     font-family: 'Dm', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     overflow-y: scroll;
 }
 .modalcontent{
@@ -105,6 +106,7 @@
     /* border-radius: 20px;
     box-shadow: 3px 4px 9px 5px rgb(14 13 13 / 10%); */
     font-family: 'DM Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     background: transparent;
     max-width: 700px;
     padding: 20px 10px;
@@ -188,6 +190,7 @@
     border-radius: 19px;
     cursor: pointer;
     font-family: 'DM Sans',sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
   .button001:hover{
@@ -215,6 +218,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
+    font-family: 'Lexend Deca', sans-serif;
 
   }
   .servhead{
@@ -233,9 +237,10 @@
     color: #eb6a2e;
     /* height: 50px; */
     border: 2px solid;
-    font-size: 13px;
+    font-size: 14px;
     border-radius: 20px;
     align-content: center;
     align-items: center;
     justify-content: space-around;
+    font-family: 'Lexend Deca', sans-serif;
   }

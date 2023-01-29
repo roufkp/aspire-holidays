@@ -10,6 +10,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import emailjs from 'emailjs-com';
 
 
 const TripPlan = () => {
@@ -34,17 +35,26 @@ const TripPlan = () => {
     setBudget(newValue);
   };
 
-  const onSubmitHandler = (event)=>{
-    event.preventDefault();
+ 
   //send mail with email place datevalue budget here 
+  
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs.sendForm('service_xzd0lk4','template_g3g0r86',e.target,'t-7yIUnaGm76jTR6h')
+    .then(res=>{
+      alert("mail send succesfully")
+
+    }).catch(err=> console.log(err))
   }
+  
+  
   const today = new Date();
     return(
-     <form className={classes.form}>
+     <form className={classes.form } onSubmit={sendEmail}>
         <div className={classes.div001}>
           <label>Enter Your Mail</label>
           <Box  sx={{ minWidth: 120 }} >
-            <TextField className={classes.box} id="email" label="Email"  value={email} variant="outlined" onChange={handleChangeEmail}/>
+            <TextField className={classes.box} id="email" label="Email" name='email'  value={email} variant="outlined" onChange={handleChangeEmail}/>
         </Box> 
         </div>
         <div className={classes.div001}>
@@ -57,13 +67,14 @@ const TripPlan = () => {
               id="demo-simple-select"
               value={place}
               label="Destination"
+              name='destin'
               onChange={handleChangePlace}
              >
             <MenuItem value={0}></MenuItem>  
-            <MenuItem value={10}>UK</MenuItem>
-            <MenuItem value={20}>USA</MenuItem>
-            <MenuItem value={30}>Middle East</MenuItem>
-            <MenuItem value={40}>Singapore</MenuItem>
+            <MenuItem value={"uk"}>UK</MenuItem>
+            <MenuItem value={"usa"}>USA</MenuItem>
+            <MenuItem value={"uae"}>Middle East</MenuItem>
+            <MenuItem value={"singapore"}>Singapore</MenuItem>
             </Select>
           </FormControl>
           </Box>    
@@ -73,12 +84,14 @@ const TripPlan = () => {
           <LocalizationProvider dateAdapter={AdapterDayjs}>
            <DatePicker
            label="Date"
+           name="date_"
            minDate={today}
            value={dateValue}
            onChange={(newValue) => {
             setDateValue(newValue);
            }}
             renderInput={(params) => <TextField {...params} />}
+            
           />
          </LocalizationProvider>
         </div>
@@ -91,13 +104,14 @@ const TripPlan = () => {
              max={10000}     
              getAriaLabel={() => 'Budget'}
              value={budget}
+             name="budget"
              onChange={handleChange}
              valueLabelDisplay="auto"
             getAriaValueText={valuetext}
             />
          </Box>
         </div>
-        <button onClickCapture={onSubmitHandler}>Plan Your Trip</button>
+        <input className={classes.sub} type="submit" value="Plan your trip"/>
      </form>
 
 
