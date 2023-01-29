@@ -1,17 +1,17 @@
 .div001{
 background-image: url('../../Assets/contactus.png');
-background-color: #001c28;
+background-color: aliceblue;
 width: 100%;
 /* background: linear-gradient(to bottom ,rgb(12, 8, 43),#e56329,rgb(28, 27, 27)); */
 margin: auto;
 min-height: 60vh;
 background-repeat: no-repeat;
 background-attachment: fixed;
-background-size: 300px;
+background-size: 350px;
 background-position: 10%;
 /* padding-top: 3%; */
 /* padding-left: 9%; */
-color: white;
+color: #001c28;
 text-align: left;
 font-family: 'DM Sans', sans-serif;
 }
@@ -99,8 +99,8 @@ font-family: 'DM Sans', sans-serif;
     width:auto;
     height: auto ;
     font-size: 16px;
-    background-color:  aliceblue;
-    color: #001c28;
+    background-color:  #001c28;
+    color: aliceblue;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;

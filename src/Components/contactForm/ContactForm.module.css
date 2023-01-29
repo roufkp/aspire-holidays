@@ -24,7 +24,7 @@ input{
     width: 300px;
     max-width: 100%;
     background-color: transparent;
-    border: 1px solid whitesmoke;
+    border: 1px solid #001c28;
     border-radius: 10px;
     text-align: center;
     color: azure;
@@ -49,7 +49,7 @@ select{
     font-family: 'Lexend Deca', sans-serif;
    }
 .sub{
-    background: aliceblue;
+    background: #001c28;
     width: 300px;
     max-width: 80%;
     /* padding: 10px 20px; */
@@ -61,7 +61,7 @@ select{
     justify-content: center;
     border: none;
     align-items: center;
-    color: #001c28;
+    color: aliceblue;
     border-radius: 20px;
     font-size: 16px;
     font-weight: 600;
