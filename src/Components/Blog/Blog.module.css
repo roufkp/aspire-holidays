@@ -3,10 +3,13 @@
   padding: 100px 0 0 0;
   margin: auto;
   width: 100%;
+  position: relative;
+  z-index: 2;
  
 }
 .div0000{
   background-color: white;
+ 
 }
 .div001{
   background:transparent;
@@ -183,6 +186,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding: 100px 0;
+    position: relative;
+    z-index: 2;
   }
 
 .div006{

@@ -5,6 +5,8 @@
   .div000{
     background-color: white;
     margin-top: 0;
+    position: relative;
+    z-index: 2;
   }
 h1{
 font-weight: 600;

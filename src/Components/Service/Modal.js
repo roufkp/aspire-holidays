@@ -33,7 +33,7 @@ function Modal(props){
                             </div>        
                            
                         </div>
-                        <button className={styles.button001}><a href="/contact_us">Instant Booking </a></button>
+                        <a href="/contact_us"><button className={styles.button001}>Instant Booking </button></a>
                     </div>
             
         </div>

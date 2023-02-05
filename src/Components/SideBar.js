@@ -17,9 +17,9 @@ return(
                   {props.menu.map((e) => <li key={e.name} className='li121' onClick={onClickHandler}><NavLink to={e.link} className='navlink0001'>{e.name}</NavLink></li>)}
                   
                 </ul>
-                <SocialIcon url="https://instagram.com/in/jaketrent" bgColor="transparent" fgColor="rgb(107 106 106)" style={{ height: 40, width: 40 }}/>
-                <SocialIcon url="https://facebook.com/in/jaketrent" bgColor="transparent" fgColor="rgb(107 106 106)" style={{ height: 40, width: 40 }}/>
-                <SocialIcon url="https://mailto.com/in/jaketrent" bgColor="transparent" fgColor="rgb(107 106 106)" style={{ height: 40, width: 40 }}/>
+                <SocialIcon url="https://instagram.com/aspireholidaysltd?igshid=Yzg5MTU1MDY=" bgColor="transparent" fgColor="rgb(107 106 106)" style={{ height: 40, width: 40 }}/>
+                <SocialIcon url="https://facebook.com/" bgColor="transparent" fgColor="rgb(107 106 106)" style={{ height: 40, width: 40 }}/>
+                <SocialIcon url="https://www.linkedin.com/company/aspire-holidays-ltd/" bgColor="transparent" fgColor="rgb(107 106 106)" style={{ height: 40, width: 40 }}/>
             </div>
     </div>
 )};

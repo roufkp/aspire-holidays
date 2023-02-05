@@ -48,7 +48,7 @@ const FullScreenSlider = () => {
                 </div>
                 <div className={styles.calltoaction}>
                 Plan your next romantic getaway today!
-                <button>Call Now</button>
+                <a href="tel:+4407467360046"><button>Call Now</button></a>
                 </div>
               </div>
               {/* <img src={img1} alt="Slide 1" /> */}
@@ -69,7 +69,7 @@ const FullScreenSlider = () => {
             </div>
             <div className={styles.calltoaction}>
               Ready for your Adventure!
-            <button>Call Now</button>
+              <a href="tel:+4407467360046"><button>Call Now</button></a>
             </div>
           </div>
           {/* <img src={img2}alt="Slide 2" /> */}
@@ -89,7 +89,7 @@ const FullScreenSlider = () => {
             </div>
             <div className={styles.calltoaction}>
             Book your dream vacation now! 
-            <button>Call Now</button>
+            <a href="tel:+4407467360046"><button>Call Now</button></a>
             </div>
           </div>
           {/* <img src={img3} alt="Slide 3" /> */}

@@ -28,7 +28,7 @@ function MyForm() {
   
     return (
       <form  onSubmit={sendEmail}>
-        <label>e-mail:
+        <label>E-mail:
         <input 
           type="text" 
           name="user_email" 
@@ -57,7 +57,7 @@ function MyForm() {
           />
           </label>
          
-          <input className={styles.sub} type="submit" value="send"/>
+          <input className={styles.sub} type="submit" value="Send"/>
       </form>
     )
   }

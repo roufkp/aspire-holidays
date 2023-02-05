@@ -5,7 +5,8 @@ const CoustomBand = (props) => {
     return (
         <div className={styles.div000} style={{backgroundColor:props.color}}> 
            <div><h1>Need a Coustomized trip?</h1></div>
-           <button className={styles.button} >Let's Discuss</button>
+           <a href="tel:+4407467360046"><button className={styles.button}>Let's Discuss</button></a>
+           
         </div>
 
     )

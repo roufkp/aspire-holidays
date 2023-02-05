@@ -6,6 +6,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: contain;
+  position: relative;
+  z-index: 2;
   
  
 }
