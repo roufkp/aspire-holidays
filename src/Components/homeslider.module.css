@@ -3,10 +3,12 @@
     background-color: transparent;
     max-width: 1000px;
     margin: auto;
+    width: 90vw;
 }
 .div003{
     background-color: transparent;
     max-width: 1000px;
+    width: 95vw;
 }
 .div003 img{
     width:230px;
@@ -14,6 +16,7 @@
     margin: auto;
     align-items: center;
     box-shadow: 1px 3px 9px 0px rgb(0 0 0 / 25%) ;
+    object-fit: cover;
 }
 .caroText{
     display: flex;

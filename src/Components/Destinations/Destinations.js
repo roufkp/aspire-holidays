@@ -63,7 +63,7 @@ const Destinations = () => {
     return(
        <div>
          <Navigation path="destinations"></Navigation>
-         <div className={styles.div000} style={{backgroundPosition: `${(offset/1.69875 - 220)}% ${( 30- offset/67.95)}%`}} onScroll={(event) => {console.log(event,"iiiiiiiii")}}>
+         <div className={styles.div000} style={{backgroundPosition: `${(offset/1.69875 - 300)}% ${( 30- offset/67.95)}%`}} onScroll={(event) => {console.log(event,"iiiiiiiii")}}>
          <div className={styles.div001}>
             <div className={styles.div002}>
               <img  className={styles.img001}src={Travel} alt='traveling couple'></img>

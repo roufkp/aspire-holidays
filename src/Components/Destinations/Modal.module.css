@@ -151,7 +151,7 @@
        /* min-width: 165px; */
        font-weight: 600;
        letter-spacing: 1px;
-       background-color: #eb6a2e;
+       background-color: #001c28;
        color: white;
        border: none;
        padding: 7px 24px;
@@ -168,7 +168,7 @@
     right: 10px;
     font-weight: 600;
     font-size: 1rem;
-    background-color: #eb6a2e;
+    background-color: #001c28;
     color: white;
     border: none;
     padding: 10px 10px;
@@ -182,7 +182,7 @@
 .button001 {
     min-width: 165px;
     font-weight: 600;
-    background-color: #eb6a2e;
+    background-color: #001c28;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -207,7 +207,7 @@
     margin:auto ;
   }
   .modalcont h1{
-    color:#eb6a2e;
+    color:#001c28;
     background-color: transparent;
     text-transform: uppercase;
   }
@@ -227,14 +227,14 @@
   .sty{
     background-color: red;
     margin: 10px 10px;
-    background-color: #eb6a2e;
+    background-color: #001c28;
     padding: 10px 15px;
     text-align: center;
     display: flex;
     color: aliceblue;
     background: transparent;
     min-width: 10px;
-    color: #eb6a2e;
+    color: #001c28;
     /* height: 50px; */
     border: 2px solid;
     font-size: 14px;

@@ -20,7 +20,7 @@ return(
         <div className={styles.div001}>
         <img src={img001} alt="" />
             <h1>Company Profile</h1>
-            <p>Aspire Holidays Ltd. commenced its operations in 1994 with a full bouquet of services, a team of travel and tourism professionals. 
+            <p>Aspire Holidays Ltd. commenced its operations in 2022 with a full bouquet of services, a team of travel and tourism professionals. 
                 	Now it is connecting more people around the world and providing services in not just the UK but to the places 
                     where the customers want their services.Aspire holidays has its privileged customers as family and friends 
                         and is consistently growing its boundaries wider with more connections through our family. 
@@ -38,14 +38,14 @@ Aspire Holidays Ltd. a global travel network organisation, offers a full range o
             <div className={styles.div003}>
                 <h1>Value We Carry</h1>
                 <ul>
-                    <li> 1. Treating customers as family and friends.</li>
-                    <li>  2. Consistently expanding our reach and connections. </li>
-                    <li> 3. Offering a comprehensive and extensive range of services. </li>
-                    <li> 4. Delivering strategic value and innovative technology. </li>
-                    <li> 5. Providing true travel consulting. </li>
-                    <li> 6. Having a team of dedicated professionals. </li>
-                    <li> 7. Operating with a global network. </li>
-                    <li> 8. Utilizing state of the art technology. </li>
+                    <li> <span></span> Treating customers as family and friends.</li>
+                    <li> <span></span> Consistently expanding our reach and connections. </li>
+                    <li> <span></span> Offering a comprehensive and extensive range of services. </li>
+                    <li> <span></span> Delivering strategic value and innovative technology. </li>
+                    <li> <span></span> Providing true travel consulting. </li>
+                    <li> <span></span> Having a team of dedicated professionals. </li>
+                    <li> <span></span> Operating with a global network. </li>
+                    <li> <span></span> Utilizing state of the art technology. <span></span></li>
 
                 </ul>
             </div>

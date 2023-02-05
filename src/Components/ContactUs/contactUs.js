@@ -18,19 +18,19 @@ const ContactUs = () => {
                    </div>
                 <div className={styles.div002}>
                     <div className={styles.div003}>
-                    <SocialIcon url="https://instagram.com/in/jaketrent" fgColor="transparent" bgColor="whitesmoke" style={{ height: 35, width: 35 }}/>
+                    <SocialIcon url="https://instagram.com/in/jaketrent" fgColor="transparent" bgColor="#001c28" style={{ height: 35, width: 35 }}/>
                        
                     </div>
                     <div className={styles.div003}>
-                    <SocialIcon url="https://linkedin.com/in/jaketrent" fgColor="transparent" bgColor="whitesmoke" style={{ height: 35, width: 35 }}/>
+                    <SocialIcon url="https://linkedin.com/in/jaketrent" fgColor="transparent" bgColor="#001c28" style={{ height: 35, width: 35 }}/>
                      
                     </div>
                     <div className={styles.div003}>
-                    <SocialIcon url="https://facebook.com/in/jaketrent" fgColor="transparent" bgColor="whitesmoke" style={{ height: 35, width: 35 }}/>
+                    <SocialIcon url="https://facebook.com/in/jaketrent" fgColor="transparent" bgColor="#001c28" style={{ height: 35, width: 35 }}/>
                       
                     </div>
                     <div className={styles.div003}>
-                    <SocialIcon url="https://google.com/in/jaketrent" fgColor="transparent" bgColor="whitesmoke" style={{ height: 35, width: 35 }}/>
+                    <SocialIcon url="https://google.com/in/jaketrent" fgColor="transparent" bgColor="#001c28" style={{ height: 35, width: 35 }}/>
                       
                     </div>
                 </div> 
