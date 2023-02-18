@@ -40,7 +40,7 @@ const TripPlan = () => {
   
   function sendEmail(e) {
     e.preventDefault();
-    emailjs.sendForm('service_xzd0lk4','template_g3g0r86',e.target,'t-7yIUnaGm76jTR6h')
+    emailjs.sendForm('service_xzd0lk4','template_g3g0r86',e.target,'YEyDatnB19Yu3tltM')
     .then(res=>{
       alert("mail send succesfully")
 

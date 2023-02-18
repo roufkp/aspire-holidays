@@ -130,7 +130,7 @@ color: inherit;
   @media (max-width:700px) {
   
     .div001,.div0011 ,.div0012{
-      min-height: 100vh;
+      min-height: auto;
       height: auto;
   }
   .header{

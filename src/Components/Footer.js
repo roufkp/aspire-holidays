@@ -20,12 +20,15 @@ return(
         </div>
       </div>
       <div className={styles.div003}>
+      <div className={styles.div005}><a href="/">Home</a></div>
+      <div className={styles.div005}><a href="/about_us">About</a></div>
+      <div className={styles.div005}><a href="/destinations">Destinations</a></div>
+        <div className={styles.div005}><a href="/blog">Blog</a></div>
         <div className={styles.div005} ><a href="tel:+4407467360046">Support</a></div>
         <div className={styles.div005}><a href="/contact_us">Contact Us</a></div>
         {/* <div className={styles.div005}><a href="/services">Packages</a></div> */}
         {/* <div className={styles.div005}>Terms & Conditions</div> */}
-        <div className={styles.div005}><a href="/destinations">Destinations</a></div>
-        <div className={styles.div005}><a href="/blog">Blog</a></div>
+
       </div>
       <div className={styles.div004}>
         <div className={styles.div007}>Get notifications of our latest packages</div>

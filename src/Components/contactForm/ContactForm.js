@@ -1,65 +1,38 @@
-
-import { useState } from "react";
-import ReactDOM from 'react-dom/client';
-import styles from './ContactForm.module.css'
-import emailjs from 'emailjs-com'
-
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 function MyForm() {
-    const [inputs, setInputs] = useState({});
-  
-    const handleChange = (event) => {
-      const name = event.target.name;
-      const value = event.target.value;
-      const message = event.target.message;
-      
-      setInputs(values => ({...values, [name]: value}))
-    }
-   
-  
-   
-    function sendEmail(e) {
-      e.preventDefault();
-      emailjs.sendForm('service_xzd0lk4','template_14zye1v',e.target,'t-7yIUnaGm76jTR6h')
-      .then(res=>{
-        alert("mail send succesfully")
-
-      }).catch(err=> console.log(err))
-    }
-  
-    return (
-      <form  onSubmit={sendEmail}>
-        <label>E-mail:
-        <input 
-          type="text" 
-          name="user_email" 
-        />
-        </label>
-        <label>Mobile Number:
-          <input 
-            type="TEXT" 
-            name="num" 
-          />
-          </label>
-          
-          {/* <label>Select service:
-            <select>
-            <option>( select )</option>
-            <option>United Kingdom</option>
-            <option>United States Of America</option>
-            <option>Middl East</option>
-            <option>Singapore</option>
-          </select>
-          </label> */}
-          <label >Message:
-          <input  className={styles.msg}
-            type="text" 
-            name="message" 
-          />
-          </label>
-         
-          <input className={styles.sub} type="submit" value="Send"/>
-      </form>
-    )
+  const [state, handleSubmit] = useForm("mzbqeqoj");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
   }
-
+  return (
+      <form onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+  );
+};
 export default MyForm;
