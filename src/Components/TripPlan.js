@@ -1,7 +1,7 @@
 import classes from './TripPlan.module.css';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
-import { useState } from 'react';
+import { useState,useRef} from 'react';
 import TextField from '@mui/material/TextField';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -13,7 +13,7 @@ import Select from '@mui/material/Select';
 import emailjs from 'emailjs-com';
 
 
-const TripPlan = () => {
+const TripPlan = (props) => {
 
   function valuetext(budget) {
     return `${budget}`;
@@ -22,6 +22,8 @@ const TripPlan = () => {
   const [place, setPlace] = useState('');
   const [dateValue, setDateValue] = useState(null);
   const [budget, setBudget] = useState([20, 90]);
+  const form = useRef();
+  
 
   const handleChangeEmail = (event) => {
     setEmail(event.target.value);
@@ -38,19 +40,23 @@ const TripPlan = () => {
  
   //send mail with email place datevalue budget here 
   
-  function sendEmail(e) {
-    e.preventDefault();
-    emailjs.sendForm('service_xzd0lk4','template_g3g0r86',e.target,'t-7yIUnaGm76jTR6h')
-    .then(res=>{
-      alert("mail send succesfully")
+  function sendTravelPlanEmail(e) {
+     e.preventDefault();
+     const [start,endb] = budget;
 
-    }).catch(err=> console.log(err))
-  }
+  props.sendTravelPlanEmail({email:email,destination:place,date:dateValue,start:start,endb:endb})}
+
+  //   emailjs.sendForm('service_xzd0lk4','template_g3g0r86',form.current,'t-7yIUnaGm76jTR6h')
+  //   .then(res=>{
+  //     alert("mail send succesfully")
+
+  //   }).catch(err=> console.log(err))
+  // }
   
   
   const today = new Date();
     return(
-     <form className={classes.form } onSubmit={sendEmail}>
+     <form className={classes.form } onSubmit={sendTravelPlanEmail}>
         <div className={classes.div001}>
           <label>Enter Your Mail</label>
           <Box  sx={{ Width: 230 }} >
