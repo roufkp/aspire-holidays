@@ -40,10 +40,10 @@ const TripPlan = (props) => {
  
   //send mail with email place datevalue budget here 
   
+
   function sendTravelPlanEmail(e) {
      e.preventDefault();
      const [start,endb] = budget;
-
   props.sendTravelPlanEmail({email:email,destination:place,date:dateValue,start:start,endb:endb})}
 
   //   emailjs.sendForm('service_xzd0lk4','template_g3g0r86',form.current,'t-7yIUnaGm76jTR6h')

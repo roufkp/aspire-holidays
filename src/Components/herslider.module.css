@@ -1,6 +1,6 @@
 
 .div001,.div0011 ,.div0012{
-    height: calc(100vh - 100px);
+    height:calc(100vh - 100px);
     width: 100vw;
     background-position: center;
     background-size: cover;
@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     color: #0d171afa;
-
+padding: 100px auto;
 }
 
 
@@ -32,13 +32,14 @@ color: inherit;
     background-image: url('../Assets/bg11.jpg');
 }
 .div002a{
- min-height: 90vh;
+ min-height: none;
   display: flex;
   background-color: transparent;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   text-align: left;
+  margin: 100px auto;
 }
 .div002{
   
@@ -127,11 +128,15 @@ color: inherit;
     width: 30px;
     height: auto;
   }
-  @media (max-width:700px) {
+  @media (max-width:830px) {
   
     .div001,.div0011 ,.div0012{
-      min-height: 100vh;
+      min-height: auto;
       height: auto;
+      background-size: unset;
+  }
+  .div002a{
+    min-height: 50vh;
   }
   .header{
     text-align: left;

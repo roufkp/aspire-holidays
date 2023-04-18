@@ -104,7 +104,6 @@ const Blog = () => {
         {edit && <button onClick={() => history('/updateBlog/'+ blogInfo.uuid)}>Edit</button>}
         </div>
         </div>
-        <Footer/>
         </div>;
         
 
@@ -147,9 +146,7 @@ const Blog = () => {
            {!edit &&<button className={styles.button001} onClick={() => history('/adminlogin')}><img src={admin} alt="" /></button>}
         {edit&&<button className={styles.button001} onClick={onLogoutHandler}>Logout</button>}
         </div>
-       
-       <Footer />  
-       </div>: DsiplayBlog }
+       </div>: <div className={styles.div000}>{DsiplayBlog}</div>}
      </div>
 
     )

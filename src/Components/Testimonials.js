@@ -22,7 +22,7 @@ return(
        
             
        
-        <ScrollAnimation animateIn="fadeIn">
+       
                 <div className={styles.div001}>
                     <div className={styles.div002}>
                       
@@ -44,8 +44,7 @@ return(
                       </div>
                     </div>
                 </div>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
+      
                 <div className={styles.div001}>
                     <div className={styles.div002}>
                       
@@ -67,8 +66,7 @@ return(
                       </div>
                     </div>
                 </div>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
+
                 <div className={styles.div001}>
                     <div className={styles.div002}>
                       
@@ -89,8 +87,7 @@ return(
                       </div>
                     </div>
                 </div>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
+  
                 <div className={styles.div001}>
                     <div className={styles.div002}>
                       
@@ -111,8 +108,7 @@ return(
                       </div>
                     </div>
                 </div>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
+
                 <div className={styles.div001}>
                     <div className={styles.div002}>
                       
@@ -133,7 +129,7 @@ return(
                       </div>
                     </div>
                 </div>
-        </ScrollAnimation>
+ 
 
         
            </div>
