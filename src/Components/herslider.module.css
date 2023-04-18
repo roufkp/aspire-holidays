@@ -25,8 +25,8 @@ padding: 100px auto;
 
 
 }
-.div001 .calltoaction{
-color: inherit;
+ .calltoaction{
+color: whitesmoke !important;
 }
 .div0011{
     background-image: url('../Assets/bg14.jpg');
