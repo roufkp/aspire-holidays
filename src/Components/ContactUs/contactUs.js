@@ -10,6 +10,7 @@ const ContactUs = () => {
      <div>
         <Navigation path='contact_us'/>
         <div className={styles.div001}>
+            <div className={styles.div0011}>
             <div className={styles.div0012}>
                 <h1>Contact Us On</h1>
                 
@@ -39,6 +40,7 @@ const ContactUs = () => {
                 <a href="tel:+447470852767"><button>Call Now</button></a>
                 </div>
             </div>
+        </div>
         </div>
         <Footer /> 
      </div>
