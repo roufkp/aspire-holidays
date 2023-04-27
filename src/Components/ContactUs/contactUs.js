@@ -18,7 +18,7 @@ const ContactUs = () => {
                    </div>
                 <div className={styles.div002}>
                     <div className={styles.div003}>
-                    <SocialIcon url="https://instagram.com/aspireholidaysltd?igshid=Yzg5MTU1MDY=" fgColor="transparent" bgColor="#001c28" style={{ height: 35, width: 35 }}/>
+                    <SocialIcon url="https://www.instagram.com/aspireholidaysuk/?igshid=YmMyMTA2M2Y%3D" fgColor="transparent" bgColor="#001c28" style={{ height: 35, width: 35 }}/>
                        
                     </div>
                     <div className={styles.div003}>
@@ -36,7 +36,7 @@ const ContactUs = () => {
                 </div> 
                 <div className={styles.div004}>
                 <h2>Talk to Our Customer Care Executive</h2> 
-                <a href="tel:+4407467360046"><button>Call Now</button></a>
+                <a href="tel:+447470852767"><button>Call Now</button></a>
                 </div>
             </div>
         </div>
