@@ -140,12 +140,12 @@ color: whitesmoke !important;
     .div001,.div0011 ,.div0012{
       min-height: auto;
       height: auto;
-      background-size: unset;
+      /* background-size: unset; */
   }
   .div002a{
     min-height: 50vh;
   }
   .header{
-    text-align: left;
+    text-align: center;
   }
   }
