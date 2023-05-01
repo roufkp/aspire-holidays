@@ -26,6 +26,7 @@ return(
         <div className={styles.div005}><a href="/blog">Blog</a></div>
         <div className={styles.div005} ><a href="tel:+447470852767">Support</a></div>
         <div className={styles.div005}><a href="/contact_us">Contact Us</a></div>
+        <div className={styles.div005}><a href="/admin">Admin</a></div>
         {/* <div className={styles.div005}><a href="/services">Packages</a></div> */}
         {/* <div className={styles.div005}>Terms & Conditions</div> */}
 

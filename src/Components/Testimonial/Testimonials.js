@@ -1,11 +1,11 @@
 import styles from './Testimonials.module.css';
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
-import face1 from '../Assets/face1.png';
-import face2 from '../Assets/face2.png';
-import face3 from '../Assets/face3.png';
-import face4 from '../Assets/face4.png';
-import face5 from '../Assets/face5.png';
+import face1 from '../../Assets/face1.png';
+import face2 from '../../Assets/face2.png';
+import face3 from '../../Assets/face3.png';
+import face4 from '../../Assets/face4.png';
+import face5 from '../../Assets/face5.png';
 import StarIcon from '@mui/icons-material/Star';
 import Box from '@mui/material/Box';
 import { SocialIcon } from 'react-social-icons';

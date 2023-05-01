@@ -75,23 +75,7 @@ const onChange = (e,Img) => {
     };
       
     const  onSubmitHandler = () => {
-     //var txt1 = document.getElementById("text-area-first").value;
-     //var txt2 = document.getElementById("text-area-second").value;
-     //var txtt1store =  txt1.replace(/\n/g, "<brakeo$qexc>");
-     //var txtt2store =  txt2.replace(/\n/g, "<brakeo$qexc>");
-     //const Body = {...BlogState,content1:txtt1store, content2:txtt2store};
-
-      // const body = new FormData
-      // body.append("img1", `"${BlogState.img1}"`)
-      // body.append("", "\\")
-      // body.append("img2", `"${BlogState.img2}"`)
-      // body.append("", "\\")
-      // body.append("content1", `"${txt1}"`)
-      // body.append("", "\\")
-      // body.append("content2", `"${txt1}"`)
-      // body.append("", "\\")
-      // body.append("head", `"${BlogState.head}"`)
-
+     
       const form = new FormData();
       form.append('img1', `${BlogState.img1}`);
       form.append('img2', `${BlogState.img2}`);
@@ -207,7 +191,7 @@ const axiospost = async (path, form) =>{
     <Stack sx={{ width: '50%', display:success?'block':'none',position:"fixed",marginTop:'10rem' }} spacing={2}>
       <Alert onClose={() => {setSuccess(null)}}>{success?.message}</Alert>
     </Stack>
-     <img  className={styles.img001} src={aspirelogo} alt="aspirelogo"></img>
+     {/* <img  className={styles.img001} src={aspirelogo} alt="aspirelogo"></img> */}
      
        </div>
       
@@ -272,7 +256,7 @@ const axiospost = async (path, form) =>{
                 <div
                  className="box"
                   >
-                <img style={{height:'300px',marginTop:"40px", boxShadow:"0px 0px 2px black"}} src={cropData.img2} alt="cropped" />
+                <img style={{height:'300px',marginTop:"40px", boxShadow:"0px 0px 2px black"}} src={cropData.img2} alt="" />
                 </div>
                 </div>
                 </div>
@@ -302,7 +286,7 @@ const axiospost = async (path, form) =>{
                </div>
                
                 <div  className="box">
-                  <img  src={cropData.img1} alt="cropped" />
+                  <img  src={cropData.img1} alt="" />
                 </div>
                 </div>
                 <div className="div003c">

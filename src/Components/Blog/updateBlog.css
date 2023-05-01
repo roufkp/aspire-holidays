@@ -14,13 +14,13 @@
    }
    
    .box {
-       width: 380px;
+       /* width: 380px;
        max-width: 98%;
        float: right;
        height: 300px; 
        background: #e5fbff;
        border: 8px solid white;
-       box-shadow: 7px 1px 20px 0px #0000006e;
+       box-shadow: 7px 1px 20px 0px #0000006e; */
    
      }
    .box img{

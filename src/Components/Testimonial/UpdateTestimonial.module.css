@@ -1,0 +1,81 @@
+.testform{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+    width: 90vw;
+    max-width: 500px;
+}
+.testform .formsub{
+    background: transparent;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width:90%; */
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.testform .formsubpic{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width:90%; */
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.testform .formsubpic label{
+    font-size: 13px;
+    color: rgba(103, 102, 102, 0.751);  
+}
+.testform .formsubpic input{
+    display: grid;
+    height: 35px;
+    place-content: center;
+    place-items: center;
+    border-bottom: 1px solid rgba(103, 102, 102, 0.751);
+}
+.testform .formsub label{
+    font-size: 13px;
+    color: rgba(103, 102, 102, 0.751);
+    text-align:left ;
+}
+.testform .formsub input,textarea{
+    min-height: 35px;
+    /* border-radius: 10px; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 90vw;
+    max-width: 400px;
+    padding-left: 10px;
+    text-align:left ;
+    border: 1px solid rgba(103, 102, 102, 0.751);
+}
+
+.testform .formsub button {
+    text-align: center;
+    font-size: 14px !important;
+    cursor: pointer;
+    background: #ff6b06;
+    border-radius: 20px;
+    color: #fff;
+    min-width: 120px;
+    text-align: center !important;
+    width: fit-content !important;
+    border: none;
+    min-height: 40px;
+    padding: 0 !important;
+  }
+  .testform .formsub button:hover{
+    background-color: #fff;
+    color: #ff6b06;
+    border: 1px solid rgba(22, 1, 1, 0.353);
+
+  }
+  
