@@ -173,14 +173,16 @@
   }
   .div00{
     background: rgb(243, 246, 248);
-    width: 100%;
     margin: auto;
     min-height: 60vh;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 100px 15px;
     position: relative;
+    z-index: 2;
+    /* gap: 30px; */
   }
 
 .div006{
@@ -223,15 +225,16 @@
 .div00 p{
   width: 400px;
   max-width: 95%;
-  margin: 20px 20px;
+  /* margin: 200px 20px; */
 }
 .div00 .div002a{
-  background-color:   transparent;
+  background-color: transparent;
   margin: auto auto;
-  padding-bottom: 0;
+  padding-bottom: 60px !important;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 1000px;
   justify-content: center;
   text-align: left;
 }

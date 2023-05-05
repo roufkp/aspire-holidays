@@ -99,7 +99,9 @@ const Blog = () => {
             {blogInfo.content2}
             {/* ?.split("<brakeo$qexc>").map(para => {if (para !== ''){return(<p>{para}</p>)}})} */}
           </div>    
-           <img  className={styles.img002} src={img2path} alt="traveling"></img>          
+           {/* <img  className={styles.img002} src={img2path} alt="traveling"></img>           */}
+           {/* <h1 style={{color:"red"}}>jooooo</h1> */}
+           <button onClick={() => window.history.back()}>Go Back</button>
         </div>
         {edit && <button onClick={() => history('/updateBlog/'+ blogInfo.uuid)}>Edit</button>}
         </div>
@@ -124,6 +126,7 @@ const Blog = () => {
              </div>
             <div className={styles.div004}>
             <button  onClick={() => onFetchFullBLog(e.uuid)}>View more</button>
+            
             </div>
           </div>)}
     );
@@ -146,7 +149,8 @@ const Blog = () => {
            {!edit &&<button className={styles.button001} onClick={() => history('/adminlogin')}><img src={admin} alt="" /></button>}
         {edit&&<button className={styles.button001} onClick={onLogoutHandler}>Logout</button>}
         </div>
-       </div>: <div className={styles.div000}>{DsiplayBlog}</div>}
+       <Footer />  
+       </div>: DsiplayBlog }
      </div>
 
     )

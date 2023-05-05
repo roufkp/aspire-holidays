@@ -12,6 +12,7 @@ import React,{useState} from 'react';
 import Login from './Components/Blog/login';
 import UpdateBlog from './Components/Blog/updateBlog';
 import MyForm from './Components/contactForm/ContactForm';
+import Admin from './Components/Admin';
 
 
 
@@ -46,6 +47,9 @@ function App() {
          <Route
            path="/contact_us"
            element= {<ContactUs />}/>  
+           <Route
+           path="/admin"
+           element= {<Admin/>}/>  
           <Route
            path="/updateBlog"
            element={<UpdateBlog/>}>

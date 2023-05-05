@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 import TripPlan from './TripPlan';
 import Destinations from './Destination';
 import AspareLogo  from '../Assets/Aspare-Logo.png'
-import Testimonials from './Testimonials';
+import Testimonials from '../Components/Testimonial/Testimonials';
 import Footer from './Footer';
 import CoustomBand from './CoustomBand';
 import 'react-multi-carousel/lib/styles.css';
