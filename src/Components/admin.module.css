@@ -26,12 +26,13 @@
   
   .listItem {
     text-align: center;
-    font-size: 14px !important;
+    font-size: 2px !important;
     cursor: pointer;
     background: #ff6b06;
     border-radius: 20px;
     color: #fff;
-    min-width: 120px;
+    min-width: 100px;
+    width: fit-content;
     text-align: center !important;
     width: fit-content !important;
     border: none;
@@ -63,14 +64,43 @@
     padding: 16px;
   }
   
-  .section {
-    margin-top: 0;
-    padding: 0;
-    background-color: #fff;
-    display: block;
-  }
-  
   .active {
     display: block;
   }
   
+  .section {
+    margin-top: 0;
+    padding: 0;
+    background-color: #fff;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    /* flex-wrap: wrap; */
+  }
+  .section .side{
+    width:30%;
+    background: red;
+    min-height: 60vh; 
+  }
+  .section .details{
+    width: 70%;
+    background: #000;
+
+  }
+
+  @media (max-width: 768px) {
+    .section{
+      flex-direction: column;
+    }
+    .section .side{
+      width: 100%;
+      min-height: 200px;
+      height: auto;
+    }
+    .section .details{
+      width: 100%;
+      background: #000;
+      min-height: 500px;  
+    }
+  }
