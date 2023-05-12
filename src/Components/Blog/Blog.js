@@ -65,9 +65,9 @@ function Blog() {
 
   return (
     <>
+    <Navigation path='blog' />
      
     <div className= {styles.blogpage}>
-    <Navigation path='blog' />
     
       <div className= {styles.bloglist}>
         <h2>Blog List</h2>
