@@ -32,30 +32,7 @@ function Blog() {
     },[]);
   const BlogOutLook = availableBlog;
   
-  // const blogsData = [
-  //   {
-  //     id: 1,
-  //     img:<img src={img1pathu} alt="" />,
-  //     head: "My first blog post",
-  //     author: "John Doe",
-  //     content1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  //   },
-  //   {
-  //     id: 2,
-  //     img:<img src={img1pathu} alt="" />,
-  //     head: "My second blog post",
-  //     author: "Jane Smith",
-  //     content1: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
-  //   },
-  //   {
-  //     id: 3,
-  //     img:<img src={img1pathu} alt="" />,
-  //     head: "My third blog post",
-  //     author: "Bob Johnson",
-  //     content1: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis."
-  //   }
-  // ];
-
+ 
   function handleSelectBlog(blog) {
     setSelectedBlog(blog);
     
