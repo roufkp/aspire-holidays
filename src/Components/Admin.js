@@ -17,7 +17,7 @@ import { GetApI } from '../Components/Api/ApiInterface';
 const Admin = () => {
     const [activeSection, setActiveSection] = useState(null);
     const [availableBlog, setAvailableBlog] = useState([]);
-    const [edit,setEdit] = useState(null);
+    const [edit,setEdit] = useState(1);
     const [blogInfo, setBlogInfo] = useState({});
     const history = useNavigate();
 
@@ -26,13 +26,29 @@ const Admin = () => {
       GetApI({path:"/getblogs",callbackfunc:getblogs}) 
     };
   
+ 
+   
+    const [selectedBlog, setSelectedBlog] = useState(null);
+  
+    useEffect(() => {
+      // setShowLoader(true);
+      onFetchHandler()
+      },[]);
+    const BlogOutLook = availableBlog;
+   
+    function handleSelectBlog(blog) {
+      setSelectedBlog(blog);
+      
+    }
     const getblogs = (Data) => {
       // setShowLoader(false)
      if (Data.outcome === "success"){
-       console.log("ssssssssss")
-       setAvailableBlog(Data.blogs)
-       setEdit(1)
-       history('/blog/' + Data.blog.uuid)
+       console.log("ssssssssss,",Data);
+       setBlogInfo(Data.blog);
+       setAvailableBlog(Data.blogs);
+       history('/blog/' + Data.blog.uuid);
+      setEdit(1);
+
      }else{
        console.log("error in api ",Data)
      }
@@ -47,22 +63,13 @@ const Admin = () => {
       console.log("error in api ",Data)
     }
   };
-    const [selectedBlog, setSelectedBlog] = useState(null);
-  
-    useEffect(() => {
-      // setShowLoader(true);
-      onFetchHandler()
-      },[]);
-    const BlogOutLook = availableBlog;
-    
-   
-    function handleSelectBlog(blog) {
-      setSelectedBlog(blog);
-      
-    }
+
+
 
   function handleItemClick(index) {
     setActiveSection(index);
+    
+
   };
     return(
         <>
@@ -131,6 +138,8 @@ const Admin = () => {
 
                       {/* <p>Author: {selectedBlog.author}</p> */}
                       <p>{selectedBlog.content1}</p>
+                      {edit && <button onClick={() => history('/updateBlog/'+ blogInfo.uuid)}>Edit</button>}
+
                     </div>
                   ) : (
                     <p>Please select a blog from the list</p>
