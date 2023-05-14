@@ -106,8 +106,11 @@ const Admin = () => {
           </Typography>
         ) : (
           <div className={styles.fullScreen}>
-            {activeSection === 0 ? (<>             
-              <div className= {styles.blogpage}>    
+            {activeSection === 0 ? (<> 
+              <button>Add</button>
+
+              <div className= {styles.blogpage}>  
+
                 <div className= {styles.bloglist}>
                   <h2>Blog List</h2>
                     <span></span>
@@ -133,7 +136,7 @@ const Admin = () => {
                       <span></span>
                       <img src={selectedBlog.img1.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg')} alt="" />
                       <p>{selectedBlog.content1}</p>
-                      {edit && <button onClick={() => history('/updateBlog/'+ blogInfo.uuid)}>Edit</button>}
+                      {/* {edit && <button onClick={() => history('/updateBlog/'+ blogInfo.uuid)}>Edit</button>} */}
                     </div>
                   ) : (
                     <p >Please select a blog from the list</p>
@@ -141,6 +144,7 @@ const Admin = () => {
                 </div>
               </div>
               <div>
+                <button>Edit session</button>
                 <UpdateBlog/>
               </div>              
               </>
