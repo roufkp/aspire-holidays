@@ -139,6 +139,7 @@ margin: auto ;
     height: 500px;
     /* object-fit: cover; */
   
+
   }
   .bloglist ul{
     display: flex;
@@ -151,4 +152,5 @@ margin: auto ;
     /* margin-left: 30%; */
     /* float: left; */
   }
+
 }

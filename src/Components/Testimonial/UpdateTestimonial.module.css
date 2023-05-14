@@ -54,7 +54,8 @@
     width: 90vw;
     max-width: 400px;
     padding-left: 0px;
-    text-align:left ;
+    text-align:center ;
+    font-family: 'Dm sans',sans-serif;
     border: 1px solid rgba(103, 102, 102, 0.751);
 }
 
