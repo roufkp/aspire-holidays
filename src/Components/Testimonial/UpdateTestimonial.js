@@ -8,8 +8,8 @@ import { SettingsInputSvideo } from '@mui/icons-material';
 
 
 
-const UpdateTestimonial=()=>{
-    const initUserData = {name:'',post:'',content:'',prof_picture:''};
+const UpdateTestimonial=(props)=>{
+    const initUserData = props.init;
 
     const [userData,setUserData] = useState(initUserData);
    console.log(userData,"%%%%%%%")
@@ -47,19 +47,30 @@ const UpdateTestimonial=()=>{
         if(Data.uuid){
           console.log("uuid", Data.uuid);
           console.log("successfully enterd testi monial");
-          setUserData()
         }
+      };
+
+      const onUpdateTestimonials = (Data) => {
+       console.log(Data);
       };
       
       const handleSubmit = async (event) => {
         event.preventDefault();
-      
-        PostAPI({path:"/putTestimonials"
+        if(userData.uuid){
+         {PostAPI({path:"/updateTestimonial/" + userData.uuid
         ,body:JSON.stringify(userData)
         ,type:'application/json'
+        ,callbackfunc:onUpdateTestimonials
+          })};
+        }else
+        {
+        const a = userData;
+        delete a.uuid;    
+        PostAPI({path:"/putTestimonials"
+        ,body:JSON.stringify(a)
+        ,type:'application/json'
         ,callbackfunc:onPostTestimonials
-      });
-  
+      })};
   };
       
     
@@ -70,20 +81,20 @@ const UpdateTestimonial=()=>{
         <form className={styles.testform} action="" onSubmit={handleSubmit} >
             <div className={styles.formsub}>
                 <label htmlFor="name">Name</label>
-                <input type="text" name="name" id="" onChange={(event) => handleChange(event,"name")} />
+                <input type="text" name="name" id="" onChange={(event) => handleChange(event,"name")} value={userData.name} />
             </div>
             <div className={styles.formsub}>
                 <label htmlFor="post">Company & Job Role</label>
-                <input type="text" name="post" id="" onChange={(event) => handleChange(event,"post")} />
+                <input type="text" name="post" id="" onChange={(event) => handleChange(event,"post")} value={userData.post} />
             </div>            
             <div className={styles.formsub}>
                 <label htmlFor="text">Comment</label>
                 {/* <input type="text" name="text" id="" /> */}
-                <textarea rows="5" name="text" cols="" onChange={(event) => handleChange(event,"content")} ></textarea>
+                <textarea rows="5" name="text" cols="" onChange={(event) => handleChange(event,"content")} value={userData.content} ></textarea>
             </div>
             <div className={styles.formsubpic}>
                 <label htmlFor="pic">Photo</label>
-                <input type="file" name="fileInput" id="fileInput" onChange={(event) => onImageUpload(event)} /> 
+                <input type="file" name="fileInput" id="fileInput" onChange={(event) => onImageUpload(event)} value={useState.prof_picture}/> 
             </div>
             <div className={styles.formsub}>
                 <button type='submit'>Upload</button>

@@ -16,9 +16,10 @@ import axios from 'axios';
 const FormData = require('form-data');
 
 
-const init = {img1:null,img2:null,head:"",content1:"",content2:""};
+const init = {img1:null,head:"",content1:""};
 
-const UpdateBlog =() => { 
+const UpdateBlog =(props) => {
+  const init = props.init;
 const [showloader, setShowLoader] = useState({delete:false,update:false});    
 const history = useNavigate();
 const param =useParams();
@@ -26,11 +27,11 @@ console.log(param,"kkkk")
 const [success,setSuccess]=useState(null);
 const [error,setError]=useState(null);
 const [BlogState, setBlogState] =useState(init);
-const [images, setImage] = useState({img1:null,img2:null});
+const [images, setImage] = useState({img1:null});
 const [showModal,setShowModal]= useState({m1:false,m2:false})
 console.log(showModal)
-const [cropData, setCropData] = useState({img1:"#",img2:"#"});
-const [cropper, setCropper] = useState({img1:null,img2:null});     
+const [cropData, setCropData] = useState({img1:"#"});
+const [cropper, setCropper] = useState({img1:null});     
 const imageRef = useRef(null);
 const [showState,setShowState] = useState(false);
 console.log(cropper)
@@ -78,15 +79,13 @@ const onChange = (e,Img) => {
      
       const form = new FormData();
       form.append('img1', `${BlogState.img1}`);
-      form.append('img2', `${BlogState.img2}`);
       form.append('content1', `${BlogState.content1}`);
-      form.append('content2', `${BlogState.content2}`);
       form.append('head', `${BlogState.head}`);
 
       console.log("formdata", form)
       // setShowLoader((prev) => {return({...prev,update:true})}) 
-       if(param.forwardPath){
-        const path = "https://aspireholidaysltd.com/v1/updateblogs/" + param.forwardPath
+       if(init.uuid){
+        const path = "https://aspireholidaysltd.com/v1/updateblogs/" + init.uuid
         axiospost(path,form);
        }
       //   PostAPI({path:"/updateblogs/" + param.forwardPath
@@ -148,10 +147,8 @@ const axiospost = async (path, form) =>{
       if (Data.outcome === "success"){
         console.log("tgyuio",Data)
         setBlogState({img1:Data.blog.img1,
-                      img2:Data.blog.img2,
                       head:Data.blog.head,
-                      content1:Data.blog.content1,
-                      content2:Data.blog.content2})
+                      content1:Data.blog.content1})
       }else{
         console.log("error in api ",Data)
       }
@@ -182,7 +179,7 @@ const axiospost = async (path, form) =>{
   }; 
   
   const img1path = BlogState.img1?.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg');
-  const img2path = BlogState.img2?.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg');
+  //const img2path = BlogState.img2?.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg');
  return(<div className={styles.div000}>
     <div className={styles.div001}>
     <Stack sx={{ width: '50%', display:error?'block':'none',position:"fixed",marginTop:'10rem' }} spacing={2}>
@@ -197,8 +194,6 @@ const axiospost = async (path, form) =>{
       
      <div className={styles.div002} style={{display:!showState?"flex":"none"}}>
      <div className={styles.div008}>
-             <div>Section 1</div>
-             <div onClick={() => setShowState(true)} className={styles.div009}>Next</div>
         </div>
            <div className={styles.div003}>
            <div className={styles.div004}>
@@ -210,20 +205,7 @@ const axiospost = async (path, form) =>{
              </div>
            </div>
      </div>
-     <div className={styles.div002} style={{display:showState?"flex":"none"}}>
-           <div className={styles.div008}>
-             <div>Section 2</div>
-             <div onClick={() => setShowState(false)} className={styles.div009}>Prev</div></div>
-           <div className={styles.div003}>
-              <div className={styles.div004}>
-              <img src={BlogState.img2 === null?addicon:img2path} className={BlogState.img2 === null ? styles.img002:styles.img002a} alt='addimage' onClick={() => displayModal("m2")}></img>
-              </div>
-                <div className={styles.div005b}>   
-                  <textarea placeholder='Blog content'  id="text-area-second" value={BlogState.content2} onChange={(e) => onContentHandler(e,"content2")}></textarea>    
-                </div>
-           </div>
-     </div>
-     <Modal show={showModal.m2} close={() => closeModal("m2")}>
+     {/* <Modal show={showModal.m2} close={() => closeModal("m2")}>
      <div className='div003a'>
              <div className='div003'>
                     <div className='div0031' onClick={() => {closeModal("m2")}}>close</div>
@@ -260,7 +242,7 @@ const axiospost = async (path, form) =>{
                 </div>
                 </div>
                 </div>
-                </Modal>
+                </Modal> */}
                 <Modal show={showModal.m1} close={() => {console.log("onclose called"); closeModal("m1")}}>
              <div className='div003'>
                     <div className='div0031' onClick={() => {closeModal("m1")}}>close</div>
