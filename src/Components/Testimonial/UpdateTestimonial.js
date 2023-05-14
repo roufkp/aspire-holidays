@@ -1,44 +1,73 @@
 import styles from './UpdateTestimonial.module.css';
 import React, { useState } from 'react';
 import {PostAPI } from '../Api/ApiInterface';
-import { upload } from '@testing-library/user-event/dist/upload';
+import axios from 'axios';
+import ConsoleLogger from 'hero-slider/dist/modules/ConsoleLogger';
+import { SettingsInputSvideo } from '@mui/icons-material';
 
 
 
 
 const UpdateTestimonial=()=>{
-    const [image, setImage] = useState(null);
-    const [userData,setUserData] = useState({name:'',post:'',content:'',prof_picture:''});
-   console.log(userData,image,"%%%%%%%")
-    const handleChange = (event,index) => {
+    const initUserData = {name:'',post:'',content:'',prof_picture:''};
 
+    const [userData,setUserData] = useState(initUserData);
+   console.log(userData,"%%%%%%%")
+   
+   
+   const handleChange = (event,index) => {
         setUserData(prev => {
            return { ...prev,
                [index]:event.target.value }
         })
     }
 
-    const onUploadResponse =(Data) => {
-     console.log(Data)
-        };
-
     const onImageUpload = (e) => {
         e.preventDefault();
-        setImage(e.target.files[0]);
+       
         const formData = new FormData();
-        formData.append('document', image);
-        PostAPI({path:"/uploadDocument"
-          ,body:formData
-          ,type:'multipart/form-data'
-          ,callbackfunc:onUploadResponse
+        formData.append('document', e.target.files[0]);
+        const headers = {'Content-Type': 'multipart/form-data'};
+        axios.post('https://aspireholidaysltd.com/v1/uploadDocument', formData, { headers })
+        .then(response => {
+         console.log(response.data);
+         setUserData(prev => {return({...prev, prof_picture:response.data})})
+        })
+        .catch(error => {
+         console.error(error);
+        // Handle any errors
         });
       };
 
+
+
+   
+
+      const onPostTestimonials = (Data) => {
+        if(Data.uuid){
+          console.log("uuid", Data.uuid);
+          console.log("successfully enterd testi monial");
+          setUserData()
+        }
+      };
+      
+      const handleSubmit = async (event) => {
+        event.preventDefault();
+      
+        PostAPI({path:"/putTestimonials"
+        ,body:JSON.stringify(userData)
+        ,type:'application/json'
+        ,callbackfunc:onPostTestimonials
+      });
+  
+  };
+      
+    
  return(
     <>
     <div>
         <h2>Upload new Testimonial</h2>
-        <form className={styles.testform} action="">
+        <form className={styles.testform} action="" onSubmit={handleSubmit} >
             <div className={styles.formsub}>
                 <label htmlFor="name">Name</label>
                 <input type="text" name="name" id="" onChange={(event) => handleChange(event,"name")} />
@@ -54,7 +83,7 @@ const UpdateTestimonial=()=>{
             </div>
             <div className={styles.formsubpic}>
                 <label htmlFor="pic">Photo</label>
-                <input type="file" name="pic" id="" onChange={(event) => onImageUpload(event)} />
+                <input type="file" name="fileInput" id="fileInput" onChange={(event) => onImageUpload(event)} /> 
             </div>
             <div className={styles.formsub}>
                 <button type='submit'>Upload</button>

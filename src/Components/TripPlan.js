@@ -59,7 +59,7 @@ const TripPlan = (props) => {
      <form className={classes.form } onSubmit={sendTravelPlanEmail}>
         <div className={classes.div001}>
           <label>Enter Your Mail</label>
-          <Box  sx={{ Width: 230 }} >
+        <Box  sx={{ Width: 230 }} >
             <TextField className={classes.box} style={{width:230}} id="email" label="Email" name='email'  value={email} variant="outlined" onChange={handleChangeEmail}/>
         </Box> 
         </div>

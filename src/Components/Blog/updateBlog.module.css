@@ -52,7 +52,7 @@
 
   .div002{
     width: 90%;
-    max-width: 800px;
+    max-width: 500px;
     height: auto;
     background-color: transparent;
     margin: 10px auto 20px auto;
@@ -70,7 +70,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 800px;
+    max-width: 500px;
  }
 
  .div004{
@@ -97,7 +97,7 @@
 
 
  .div005, .div005b {
-    width : auto;
+    width : 100%;
     height: auto;
     background-color: transparent;
     margin: 20px auto;
@@ -105,7 +105,7 @@
  }
 
  .div005 input{
-  width: 80%;
+  width: 100%;
   color: rgb(182, 192, 233);
   font-family: "DM Sans", sans-serif;
   padding: 10px 0;
@@ -113,6 +113,7 @@
   font-size: 1rem;
   text-align: center;
   margin: auto auto 20px auto;
+  max-width: 400px;
 
  }
 
@@ -123,8 +124,8 @@
 
  .div005 textarea{
   font-family: "DM Sans", sans-serif;
-  padding: 5px 10px;
-  width: 90%;
+  /* padding: 5px 10px; */
+  width: 100%;
   color: rgb(182, 192, 233);
   height: 250px;
   background: transparent;
@@ -133,6 +134,7 @@
   border: 1px solid rgb(182, 192, 233);
   text-align: left;
   border-radius: 0px;
+  margin: auto;
 
  }
 
