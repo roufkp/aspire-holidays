@@ -47,7 +47,7 @@ const Admin = () => {
        setBlogInfo(Data.blog);
        setAvailableBlog(Data.blogs);
        history('/blog/' + Data.blog.uuid);
-      setEdit(1);
+      // setEdit(1);
 
      }else{
        console.log("error in api ",Data)
@@ -68,9 +68,10 @@ const Admin = () => {
 
   function handleItemClick(index) {
     setActiveSection(index);
-    
-
   };
+  function handleItemClickedit(){
+    console.log("setup the edit existing");
+  }
     return(
         <>
             <Navigation/>
@@ -86,13 +87,19 @@ const Admin = () => {
         <ListItem className={styles.listItem}  onClick={() => handleItemClick(0)} >
           <ListItemText primary="Blog" />
         </ListItem>
+        {/* <ListItem className={styles.listItem}  onClick={() => handleItemClickedit(0)} >
+          <ListItemText primary="Add Blog" />
+        </ListItem> */}
         <ListItem className={styles.listItem}  onClick={() => handleItemClick(1)}>
           <ListItemText primary="Testimonial" />
         </ListItem>
+        {/* <ListItem className={styles.listItem}  onClick={() => handleItemClickedit(1)}>
+          <ListItemText primary="Add Testimonial" />
+        </ListItem> */}
       </List>
       <div className={styles.sectionContainer}>
         {activeSection === null ? (
-          <Typography variant="h5" className={styles.defaultSection} style={{marginTop:"50px",fontSize:"14px"}}>
+          <Typography variant="h5" className={styles.defaultSection} style={{marginTop:"auto",fontSize:"14px"}}>
             Please press a button upload content.
           </Typography>
         ) : (
@@ -106,43 +113,37 @@ const Admin = () => {
 
                 </div>                
               </div> */}
+             
               <div className= {styles.blogpage}>    
                 <div className= {styles.bloglist}>
                   <h2>Blog List</h2>
                   <span></span>
                   <ul>
-                    {BlogOutLook.map(blog => (
-                      
-                      
+                    {BlogOutLook.map(blog => (                     
                       <div className={styles.blogitem}>
-                      
-                      <li key={blog.id}>
-                        <a href="#" onClick={() => handleSelectBlog(blog)}>
-                        <img src={blog.img1.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg')} alt="" />
-                        <h3>{blog.head}</h3>
-                        {edit && <button onClick={() => history('/updateBlog/'+ blogInfo.uuid)}>Edit</button>}
-                        </a>
-                      </li>
+                        <li key={blog.id}>
+                          <a href="#" onClick={() => handleSelectBlog(blog)}>
+                          <img src={blog.img1.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg')} alt="" />
+                          <h3>{blog.head}</h3>
+                          {edit && <button onClick={() => history('/updateBlog/'+ blogInfo.uuid)}>Edit</button>}
+                          </a>
+                        </li>
                       </div>
                     ))}
                   </ul>
                 </div>
                 <div className={styles.blogdetails}>
-                  {/* <h2>Blog Details</h2> */}
-                
+                  {/* <h2>Blog Details</h2> */}                
                   {selectedBlog ? (
                     <div>
                       <h2>{selectedBlog.head}</h2>
                       <span></span>
                       <img src={selectedBlog.img1.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg')} alt="" />
-
-                      {/* <p>Author: {selectedBlog.author}</p> */}
                       <p>{selectedBlog.content1}</p>
                       {edit && <button onClick={() => history('/updateBlog/'+ blogInfo.uuid)}>Edit</button>}
-
                     </div>
                   ) : (
-                    <p>Please select a blog from the list</p>
+                    <p >Please select a blog from the list</p>
                   )}
                 </div>
               </div>
