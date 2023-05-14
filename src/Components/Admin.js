@@ -148,6 +148,7 @@ const Admin = () => {
                 <UpdateBlog/>
               </div>              
               </>
+              
             ) : (<>
               <div className={styles.section}>
                 <div className={styles.side}>
