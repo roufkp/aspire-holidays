@@ -17,7 +17,7 @@ import { GetApI } from '../Components/Api/ApiInterface';
 const Admin = () => {
     const [activeSection, setActiveSection] = useState(null);
     const [availableBlog, setAvailableBlog] = useState([]);
-    const [edit,setEdit] = useState(1);
+    const [edit,setEdit] = useState();
     const [blogInfo, setBlogInfo] = useState({});
     const history = useNavigate();
 
@@ -44,10 +44,12 @@ const Admin = () => {
       // setShowLoader(false)
      if (Data.outcome === "success"){
        console.log("ssssssssss,",Data);
-       setBlogInfo(Data.blog);
        setAvailableBlog(Data.blogs);
+      setEdit(1);
+
+       setBlogInfo(Data.blog);
+
        history('/blog/' + Data.blog.uuid);
-      // setEdit(1);
 
      }else{
        console.log("error in api ",Data)
@@ -56,9 +58,9 @@ const Admin = () => {
    const getFullblogs = (Data) => {
     if (Data.outcome === "success"){
       console.log("tgyuio",Data)
+      setEdit(1)
       setBlogInfo(Data.blog)
-      // setEdit(1)
-      // history('/blog/' + Data.blog.uuid)
+      history('/blog/' + Data.blog.uuid)
     }else{
       console.log("error in api ",Data)
     }
@@ -104,20 +106,11 @@ const Admin = () => {
           </Typography>
         ) : (
           <div className={styles.fullScreen}>
-            {activeSection === 0 ? (<>
-              {/* <div className={styles.section}>
-                <div className={styles.side}>
-                  test
-                </div>
-                <div className={styles.details}>
-
-                </div>                
-              </div> */}
-             
+            {activeSection === 0 ? (<>             
               <div className= {styles.blogpage}>    
                 <div className= {styles.bloglist}>
                   <h2>Blog List</h2>
-                  <span></span>
+                    <span></span>
                   <ul>
                     {BlogOutLook.map(blog => (                     
                       <div className={styles.blogitem}>
@@ -147,7 +140,9 @@ const Admin = () => {
                   )}
                 </div>
               </div>
-              <UpdateBlog />
+              <div>
+                <UpdateBlog/>
+              </div>              
               </>
             ) : (<>
               <div className={styles.section}>
