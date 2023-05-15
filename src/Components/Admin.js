@@ -168,7 +168,7 @@ const c   =  <div className={styles.fullScreen}>
                 <button  onClick ={() => {setSelectedTestimonial(null); handleItemClick(3)}} style={{margin:"20px auto 30px auto"}} >Add Testimonial</button>
                 {/* <span style={{height:"1px",width:"auto",maxWidth:"270px",margin:"auto",display:"block",background:"gray"}}></span> */}
               </div>
-              <div className={styles.etst} style={{background:"transparent",maxWidth:"1100px",display:"flex",flexDirection:"row",justifyContent:"center",flexWrap:"wrap"}}>
+              <div className={styles.etst} style={{background:"transparent",maxWidth:"1100px",margin:"auto",display:"flex",flexDirection:"row",justifyContent:"center",flexWrap:"wrap"}}>
                {testimonals}                
               </div>
               </div>;
