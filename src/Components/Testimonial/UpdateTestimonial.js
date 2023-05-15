@@ -78,6 +78,7 @@ const UpdateTestimonial=(props)=>{
     <>
     <div>
         <h2>Testimonial Section</h2>
+        <span style={{display:"block",height:"1px",width:"100%",maxWidth:"270px",margin:"auto",background:"gray"}}></span>
             <form className={styles.testform} action="" onSubmit={handleSubmit} >
             <div className={styles.formsub}>
                 <label htmlFor="name">Name</label>
@@ -94,7 +95,7 @@ const UpdateTestimonial=(props)=>{
             </div>
             <div className={styles.formsubpic}>
                 <label htmlFor="pic">Photo</label>
-                <input type="file" name="fileInput" id="fileInput" onChange={(event) => onImageUpload(event)} value={useState.prof_picture}/> 
+                <input type="file" name="fileInput" id="fileInput" onChange={(event) => onImageUpload(event)} value={useState.prof_picture} style={{border:"none"}}/> 
             </div>
             <div className={styles.formsub}>
                 <button type='submit'>Upload</button>

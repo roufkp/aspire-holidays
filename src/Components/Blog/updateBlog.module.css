@@ -93,6 +93,7 @@
     width : 400px;
     max-width: 95vw;
     height: auto;
+    border: 1px solid gray;
   }
 
 
@@ -106,10 +107,10 @@
 
  .div005 input{
   width: 100%;
-  color: rgb(182, 192, 233);
+  color: rgb(79, 78, 78);
   font-family: "DM Sans", sans-serif;
   padding: 10px 0;
-  border: 1px solid rgb(182, 192, 233);
+  border:1px  solid gray;
   font-size: 1rem;
   text-align: center;
   margin: auto auto 20px auto;
@@ -126,13 +127,13 @@
   font-family: "DM Sans", sans-serif;
   /* padding: 5px 10px; */
   width: 100%;
-  color: rgb(182, 192, 233);
+  color: rgb(79, 78, 78);
   height: 250px;
   background: transparent;
   line-height: 20px;
   font-size: 16px;
-  border: 1px solid rgb(182, 192, 233);
-  text-align: left;
+  border: 1px solid gray;
+  text-align: center;
   border-radius: 0px;
   margin: auto;
 

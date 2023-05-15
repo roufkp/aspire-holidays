@@ -193,7 +193,9 @@ const axiospost = async (path, form) =>{
        </div>
       
      <div className={styles.div002} style={{display:!showState?"flex":"none"}}>
-     <div className={styles.div008}>
+     <div className={styles.div0080}>
+      <h1>Blog Section</h1>
+      <span style={{display:"block",height:"1px",width:"100%",maxWidth:"270px",margin:"auto auto 30px auto",background:"gray"}}></span>
         </div>
            <div className={styles.div003}>
            <div className={styles.div004}>

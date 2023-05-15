@@ -112,12 +112,12 @@ const Admin = () => {
      </div>)  
   });
 
-const a =  <Typography variant="h5" className={styles.defaultSection} style={{marginTop:"auto",fontSize:"14px"}}>
+const a =  <Typography variant="h5" className={styles.defaultSection} style={{marginTop:"100px",fontSize:"14px"}}>
             Please press a button upload content.
            </Typography>;
 
 const b = <div className={styles.fullScreen}> 
-             <button  onClick ={() => {setSelectedBlog(null); handleItemClick(2)}} style={{margin:"auto auto auto auto",width:"fit-content",position:"fixed",top:"100px",right:"100px"}}>Add</button>
+             {/* <button  onClick ={() => {setSelectedBlog(null); handleItemClick(2)}} style={{margin:"auto auto auto auto",width:"fit-content",position:"fixed",top:"100px",right:"100px"}}>Add</button> */}
 
              <div className= {styles.blogpage}>  
 
@@ -146,11 +146,13 @@ const b = <div className={styles.fullScreen}>
                  <span></span>
                  <img src={selectedBlog.img1.replace('/opt/digitalocean/assets','https://aspireholidaysltd.com/v1/blogimg')} alt="" />
                  <p>{selectedBlog.content1}</p>
-                 <button onClick={() => handleItemClick(2)} style={{marginBottom:"100px"}}>Edit session</button>
+                 <button onClick={() => handleItemClick(2)} style={{marginBottom:"100px"}}>Edit Blog</button>
                  {/* {edit && <button onClick={() => history('/updateBlog/'+ blogInfo.uuid)}>Edit</button>} */}
                </div>
-              ) : (
-                <p style={{margin:"100px auto auto auto",color:"gray",fontSize:"14px"}} >Please select a blog from the list to edit available blogs</p>
+              ) : (<>
+                      <p style={{margin:"100px auto 20px auto",textAlign:"center",color:"gray",fontSize:"14px"}} >Please select a blog from the list to edit available blogs</p>
+                      <button  onClick ={() => {setSelectedBlog(null); handleItemClick(2)}} style={{width:"fit-content"}}>Add</button>
+                  </>
             )}
          </div>
        </div>
@@ -159,8 +161,14 @@ const b = <div className={styles.fullScreen}>
    </div>;
 
 const c   =  <div className={styles.fullScreen}> 
-              <button  onClick ={() => {setSelectedTestimonial(null); handleItemClick(3)}} style={{margin:"auto auto 30px auto"}} >Add</button>
-              <div className={styles.etst} style={{background:"red",display:"flex",flexDirection:"row",flexWrap:"wrap"}}>
+              <div >
+                <h1>Testimonial Section</h1>
+                <span style={{height:"1px",width:"auto",maxWidth:"270px",margin:"auto",display:"block",background:"gray"}}></span>
+
+                <button  onClick ={() => {setSelectedTestimonial(null); handleItemClick(3)}} style={{margin:"20px auto 30px auto"}} >Add Testimonial</button>
+                {/* <span style={{height:"1px",width:"auto",maxWidth:"270px",margin:"auto",display:"block",background:"gray"}}></span> */}
+              </div>
+              <div className={styles.etst} style={{background:"transparent",maxWidth:"1100px",display:"flex",flexDirection:"row",justifyContent:"center",flexWrap:"wrap"}}>
                {testimonals}                
               </div>
               </div>;
