@@ -3,31 +3,22 @@ import Logo from '../../Assets/As-Lg.png';
 import { useState,useEffect} from 'react';
 import md5 from 'md5';
 import { PostAPI } from '../Api/ApiInterface';
-import { useNavigate} from 'react-router-dom';
 
 
 
-const Login =() => {
+
+const Login =(props) => {
   const [state,setState]= useState({username:'',password:''});
-  const history = useNavigate();
+
 
 
   const userData = (Data) => {
     if (Data.outcome === "success"){
-      console.log("success");
-      history('/updateBlog');
+      props.updateAuth({outcome :"success"});
     }else{
       console.log("error in api ")
     }
   };
-
-  useEffect(()=> {
-    PostAPI({path:"/login"
-    ,body:JSON.stringify({})
-    ,type:'application/json'
-    ,callbackfunc:userData
-  })
-  },[]);
 
  const  onSubmitHandler = (e) => {
   e.preventDefault();

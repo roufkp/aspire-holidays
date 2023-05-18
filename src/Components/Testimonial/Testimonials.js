@@ -39,9 +39,9 @@ const Testimonials = () => {
   },[]);
 
 
-const testimonals = testimonails.map((e) => {
+const testimonals = testimonails.map((e, i) => {
   return(
-    <div className={styles.div001}>
+    <div className={styles.div001} key= {i}>
     <div className={styles.div002}>
       
       <div className={styles.div006}>

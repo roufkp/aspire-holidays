@@ -13,7 +13,7 @@ import Login from './Components/Blog/login';
 import UpdateBlog from './Components/Blog/updateBlog';
 import MyForm from './Components/contactForm/ContactForm';
 import Admin from './Components/Admin';
-
+import AuthAdmin from './Components/AuthAdmin';
 
 
 
@@ -49,7 +49,7 @@ function App() {
            element= {<ContactUs />}/>  
            <Route
            path="/admin"
-           element= {<Admin/>}/>  
+           element= {<AuthAdmin/>}/>  
           <Route
            path="/updateBlog"
            element={<UpdateBlog/>}>

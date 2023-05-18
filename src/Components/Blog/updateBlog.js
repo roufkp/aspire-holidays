@@ -1,5 +1,4 @@
 import styles from './updateBlog.module.css';
-import aspirelogo from '../../Assets/Aspare-Logo2.png';
 import addicon from '../../Assets/addimage.png'
 import {useState, useRef, useEffect} from 'react';
 import Cropper from "react-cropper";
@@ -95,8 +94,7 @@ const onChange = (e,Img) => {
       // });
     else{
       const path = 'https://aspireholidaysltd.com/v1/putblogs'
-        axiospost(path,form);
-      
+      axiospost(path,form);
       }
     //   PostAPI({path:"/putblogs"
     //   ,body:body
@@ -120,9 +118,11 @@ const axiospost = async (path, form) =>{
     }
 ).then((res) => {
   console.log(res);
+  setSuccess({message:'Success'})
 })
 .catch((err) => {
   console.log(err);
+  setError({message:'Error'})
 });
 
 // console.log(response,"axiospost")

@@ -2,16 +2,20 @@ import styles from './UpdateTestimonial.module.css';
 import React, { useState } from 'react';
 import {PostAPI } from '../Api/ApiInterface';
 import axios from 'axios';
-import ConsoleLogger from 'hero-slider/dist/modules/ConsoleLogger';
-import { SettingsInputSvideo } from '@mui/icons-material';
+//import ConsoleLogger from 'hero-slider/dist/modules/ConsoleLogger';
+//import { SettingsInputSvideo } from '@mui/icons-material';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
 
 
 
-
-const UpdateTestimonial=(props)=>{
+const UpdateTestimonial= (props) => {
     const initUserData = props.init;
-
+    
     const [userData,setUserData] = useState(initUserData);
+    const [load, setLoad] = useState(false);
+    const [success, setSuccess] = useState(null);
+    const [error, setError] = useState(null);
    console.log(userData,"%%%%%%%")
    
    
@@ -39,19 +43,24 @@ const UpdateTestimonial=(props)=>{
         });
       };
 
-
-
    
 
       const onPostTestimonials = (Data) => {
-        if(Data.uuid){
-          console.log("uuid", Data.uuid);
-          console.log("successfully enterd testi monial");
-        }
+        if(Data?.outcome === 'success'){
+            setSuccess({message:'Successfully Added'});
+           }else{
+            setError({message:'Something went wrong'});
+           }
+
       };
 
       const onUpdateTestimonials = (Data) => {
-       console.log(Data);
+        console.log(Data,"ssssssss");
+       if(Data?.outcome === 'success'){
+        setSuccess({message:'Successfully updated'});
+       }else{
+        setError({message:'Something went wrong'});
+       }
       };
       
       const handleSubmit = async (event) => {
@@ -77,6 +86,12 @@ const UpdateTestimonial=(props)=>{
  return(
     <>
     <div>
+      <Stack sx={{ width: '50%', display:error?'block':'none',position:"fixed",marginTop:'10rem' }} spacing={2}>
+          <Alert onClose={() => {setError(null)}}>{error?.message}</Alert>
+      </Stack>
+      <Stack sx={{ width: '50%', display:success?'block':'none',position:"fixed",marginTop:'10rem' }} spacing={2}>
+          <Alert onClose={() => {setSuccess(null)}}>{success?.message}</Alert>
+      </Stack>
         <h2>Testimonial Section</h2>
         <span style={{display:"block",height:"1px",width:"100%",maxWidth:"270px",margin:"auto",background:"gray"}}></span>
             <form className={styles.testform} action="" onSubmit={handleSubmit} >
@@ -100,8 +115,6 @@ const UpdateTestimonial=(props)=>{
             <div className={styles.formsub}>
                 <button type='submit'>Upload</button>
             </div>
-
-            
         </form>
     </div>
     </>
