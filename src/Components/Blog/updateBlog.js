@@ -158,21 +158,20 @@ const axiospost = async (path, form) =>{
     setShowLoader((prev) => {return({...prev,delete:false})}) 
       if (Data.outcome === "success"){
          setBlogState(init)
-         setError({message:"successfully deleted"})
-         history('/updateBlog')
+         setSuccess({message:"successfully deleted"});
         console.log("tgyuio",Data)}else{
           console.log("error in api ",Data)
         }
     }
     
- const onDeleteHandler =() =>{
+ const onDeleteHandler = () => {
   setShowLoader((prev) => {return({...prev,delete:true})}) 
-  PostAPI({path:"/deleteblogs/"+ param.forwardPath
+  PostAPI({path:"/deleteblogs/"+ init.uuid
       ,body:JSON.stringify({})
       ,type:'application/json'
       ,callbackfunc:onDeleteResponse
     });
- }
+ };
 
  const onFetchFullBLog = (e) => {
     GetApI({path:"/getblogs/" + e , callbackfunc:getFullblogs}) 
@@ -283,8 +282,8 @@ const axiospost = async (path, form) =>{
                 </Modal>
                 <div className={styles.btns}>
                     {showloader.update ?<CircularProgress disableShrink />:<button className={styles.button001} onClick={onSubmitHandler}>Update</button>}
-                    {param.forwardPath && <button className={styles.button001} onClick={onDeleteHandler}>Delete</button>}
-                    {showloader.delete ? <CircularProgress disableShrink />:<button className={styles.button002} onClick={() => history('#')}>Back</button>}
+                    {init.uuid&& <button className={styles.button001} onClick={onDeleteHandler}>Delete</button>}
+                    {showloader.delete ? <CircularProgress disableShrink />:<button className={styles.button002} onClick={() => {onDeleteHandler()}}>Delete</button>}
                   
                 </div>
 </div>)

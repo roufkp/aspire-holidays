@@ -72,6 +72,24 @@ const Admin = () => {
      }
    };
 
+   
+   const onLogountResponse =(Data) =>{
+    if (Data.outcome === "success"){  
+      window.history.back();
+    }else{
+      console.log("error in api ",Data)
+    }
+  };
+
+  const onLogoutHandler = () => {
+    PostAPI({path:"/logout"
+    ,body:JSON.stringify({})
+    ,type:'application/json'
+    ,callbackfunc:onLogountResponse
+  });
+  };
+
+
   //  const getFullblogs = (Data) => {
   //   if (Data.outcome === "success"){
   //     console.log("tgyuio",Data)
@@ -118,7 +136,7 @@ const a =  <Typography variant="h5" className={styles.defaultSection} style={{ma
 
 const b = <div className={styles.fullScreen}> 
              {/* <button  onClick ={() => {setSelectedBlog(null); handleItemClick(2)}} style={{margin:"auto auto auto auto",width:"fit-content",position:"fixed",top:"100px",right:"100px"}}>Add</button> */}
-
+            
              <div className= {styles.blogpage}>  
 
                <div className= {styles.bloglist}>
@@ -202,6 +220,10 @@ const c   =  <div className={styles.fullScreen}>
         </ListItem> */}
         <ListItem className={styles.listItem}  onClick={() => onFetchFullBLog()}>
           <ListItemText primary="Testimonial" />
+        </ListItem>
+
+        <ListItem className={styles.listItem}  onClick={() => onLogoutHandler()}>
+          <ListItemText primary="Lgout" />
         </ListItem>
         {/* <ListItem className={styles.listItem}  onClick={() => handleItemClickedit(1)}>
           <ListItemText primary="Add Testimonial" />

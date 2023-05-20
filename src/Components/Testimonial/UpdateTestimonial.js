@@ -8,6 +8,24 @@ import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
 
 
+const Delete = async (props) => {
+    const extendPath = props.path; 
+    const object = {
+        method:'DELETE', 
+        headers: {'Content-Type':props.type},
+        credentials: 'include',
+        body:props.body}
+    try{
+      const response = await fetch("https://aspireholidaysltd.com/v1"+ extendPath, object)
+      const data     = await response.json();
+       props.callbackfunc(data)
+      return(data)
+    }catch(error){
+       console.log(error)
+       return("error")
+    };
+  };
+
 
 const UpdateTestimonial= (props) => {
     const initUserData = props.init;
@@ -42,8 +60,7 @@ const UpdateTestimonial= (props) => {
         // Handle any errors
         });
       };
-
-   
+      
 
       const onPostTestimonials = (Data) => {
         if(Data?.outcome === 'success'){
@@ -81,6 +98,23 @@ const UpdateTestimonial= (props) => {
         ,callbackfunc:onPostTestimonials
       })};
   };
+
+  const onDeleteResponse =(Data) => {
+      if (Data.outcome === "success"){
+         setSuccess({message:"successfully deleted"});
+        console.log("tgyuio",Data)}else{
+          console.log("error in api ",Data)
+        }
+    }
+    
+ const onDeleteHandler = (e) => {
+  e.preventDefault()
+  Delete({path:"/deleteTestimonial/"+ userData.uuid
+      ,body:JSON.stringify({})
+      ,type:'application/json'
+      ,callbackfunc:onDeleteResponse
+    });
+ };
       
     
  return(
@@ -114,6 +148,7 @@ const UpdateTestimonial= (props) => {
             </div>
             <div className={styles.formsub}>
                 <button type='submit'>Upload</button>
+                {userData.uuid && <button type='Delete' onClick={(e) => onDeleteHandler(e)}>Delete</button>}
             </div>
         </form>
     </div>
