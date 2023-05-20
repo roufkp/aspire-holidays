@@ -32,7 +32,7 @@ const AuthAdmin = () => {
 if(load){
   
 return(
-  <div style={{margin:'500px'}}>
+  <div style={{display:"flex",height:"100vh",justifyContent:"center",alignItems:"center"}}>
   <Stack sx={{ width: '100%', color: 'grey.500'}} spacing={2}>
     <LinearProgress color="secondary" />
     <LinearProgress color="success" />
