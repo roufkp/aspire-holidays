@@ -15,6 +15,7 @@
     max-width: 500px;
     margin: auto;
     margin-bottom: 30px;
+    gap: 10px;
 }
 .testform .formsubpic{
     background: transparent;
