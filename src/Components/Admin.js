@@ -204,7 +204,7 @@ const c   =  <div className={styles.fullScreen}>
         <>
             <Navigation/>
             <div className={styles.main}>
-            <button className={styles.listItem} style={{marginTop:"10px",marginLeft:"0",zIndex:"1500",position:"absolute",left:"20px",width:"60px",minWidth:"40px"}} onClick={() => window.history.back()}>
+            <button className={styles.listItem} style={{marginTop:"10px",marginLeft:"0",zIndex:"1500",left:"20px",width:"60px",minWidth:"40px"}} onClick={() => window.history.back()}>
               <img src={back} alt="" style={{width:"20px"}} />
             </button>
             <div className={styles.dashboard}>
